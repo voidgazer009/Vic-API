@@ -10,7 +10,7 @@
 
 **注册**：Google 账号登录 AI Studio → Get API key → 自动建项目，免费层无需绑卡
 
-**额度**：Free 层（活跃项目即可），按 RPM/TPM/RPD 计，按项目计算不按 Key；每日额度太平洋时间午夜重置；具体每模型限额在 AI Studio 的 Rate limit 页查看
+**额度**：Free 层（活跃项目即可），按 RPM/TPM/RPD 计，按项目计算不按 Key；每日额度太平洋时间午夜重置；具体每模型限额在 AI Studio 的 Rate limit 页查看，以官方控制台为准
 
 **用法**：POST generativelanguage.googleapis.com，或 google-genai SDK；支持 OpenAI 兼容端点
 

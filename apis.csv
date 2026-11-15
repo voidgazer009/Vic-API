@@ -1,7 +1,7 @@
 issue,date,direction,category,name,url,quota,match
-001,2026-11-06,一人公司,AI模型,Google Gemini API,https://aistudio.google.com,Free 层（活跃项目即可），按 RPM/TPM/RPD 计，按项目计算不按 Key；每日额度太平洋时间午夜重置；具体每模型限额在 AI Studio 的 Rate limit 页查看,★★★★★
+001,2026-11-06,一人公司,AI模型,Google Gemini API,https://aistudio.google.com,Free 层（活跃项目即可），按 RPM/TPM/RPD 计，按项目计算不按 Key；每日额度太平洋时间午夜重置；具体每模型限额在 AI Studio 的 Rate limit 页查看，以官方控制台为准,★★★★★
 001,2026-11-06,一人公司,模型路由,OpenRouter,https://openrouter.ai,模型 ID 以 :free 结尾的免费模型，20 次/分钟；累计充值不足 10 credits 时 50 次/天，≥10 时 1000 次/天,★★★★★
-001,2026-11-06,一人公司,极速推理,Groq,https://console.groq.com,,★★★★☆
+001,2026-11-06,一人公司,极速推理,Groq,https://console.groq.com,openai/gpt-oss-120b 30 RPM、1K RPD、8K TPM、200K TPD；qwen3.8-27b 同级；whisper-large-v3 20 RPM、2K RPD、每小时 7.2K 音频秒,★★★★☆
 001,2026-11-06,一人公司,网页读取,Jina Reader,https://jina.ai/reader,r.jina.ai 无 Key 20 RPM，免费 Key 500 RPM；s.jina.ai 搜索需 Key，100 RPM,★★★★★
 001,2026-11-06,一人公司,搜索,Tavily,https://tavily.com,每月 1000 credits；基础搜索 1 credit/次，高级 2；Extract 每 5 个网址 1 credit,★★★★★
 001,2026-11-06,一人公司,爬取提取,Firecrawl,https://www.firecrawl.dev,免费每月 1000 credits（约 1000 页或 500 次搜索），2 并发；scrape 10 次/分钟；Agent 每天 5 次免费,★★★★☆

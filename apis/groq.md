@@ -10,7 +10,7 @@
 
 **注册**：邮箱或 Google 登录 → API Keys
 
-**额度（免费计划）**：openai/gpt-oss-120b 30 RPM、1K RPD、8K TPM、200K TPD；qwen3.8-27b 同级；whisper-large-v3 20 RPM、2K RPD、每小时 7.2K 音频秒
+**额度**：openai/gpt-oss-120b 30 RPM、1K RPD、8K TPM、200K TPD；qwen3.8-27b 同级；whisper-large-v3 20 RPM、2K RPD、每小时 7.2K 音频秒
 
 **用法**：OpenAI 兼容 https://api.groq.com/openai/v1
 
