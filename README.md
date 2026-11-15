@@ -119,6 +119,6 @@
 
 ```python
 import json, urllib.request
-apis = json.load(urllib.request.urlopen('<raw apis.json url>'))  # 私有仓库请用 token 或本地 clone
+apis = json.load(urllib.request.urlopen('https://raw.githubusercontent.com/voidgazer009/Vic-API/main/apis.json'))
 [a['name'] for a in apis if a['direction']=='外贸']
 ```
