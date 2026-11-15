@@ -1,0 +1,91 @@
+issue,date,direction,category,name,url,quota,match
+001,2026-11-06,一人公司,AI模型,Google Gemini API,https://aistudio.google.com,Free 层（活跃项目即可），按 RPM/TPM/RPD 计，按项目计算不按 Key；每日额度太平洋时间午夜重置；具体每模型限额在 AI Studio 的 Rate limit 页查看,★★★★★
+001,2026-11-06,一人公司,模型路由,OpenRouter,https://openrouter.ai,模型 ID 以 :free 结尾的免费模型，20 次/分钟；累计充值不足 10 credits 时 50 次/天，≥10 时 1000 次/天,★★★★★
+001,2026-11-06,一人公司,极速推理,Groq,https://console.groq.com,,★★★★☆
+001,2026-11-06,一人公司,网页读取,Jina Reader,https://jina.ai/reader,r.jina.ai 无 Key 20 RPM，免费 Key 500 RPM；s.jina.ai 搜索需 Key，100 RPM,★★★★★
+001,2026-11-06,一人公司,搜索,Tavily,https://tavily.com,每月 1000 credits；基础搜索 1 credit/次，高级 2；Extract 每 5 个网址 1 credit,★★★★★
+001,2026-11-06,一人公司,爬取提取,Firecrawl,https://www.firecrawl.dev,免费每月 1000 credits（约 1000 页或 500 次搜索），2 并发；scrape 10 次/分钟；Agent 每天 5 次免费,★★★★☆
+001,2026-11-06,一人公司,邮件外联,Resend,https://resend.com,免费每月 3000 封，每天 100 封，3 个域名，3 个收件箱，1 个 webhook,★★★★☆
+001,2026-11-06,外贸,外贸汇率,Frankfurter,https://frankfurter.dev,无月/日上限（仅防滥用限速），可商用；239 种货币、108 个央行和官方来源，数据可回溯到 1948 年,★★★★☆
+001,2026-11-06,物流,物流追踪,17TRACK API,https://api.17track.net,2026-01-07 起，新账号一次性赠送 200 个单号（不再每月发放）；同一单号自动追踪不重复扣费,★★★☆☆（额度有限，适合试跑）
+001,2026-11-06,自媒体,自媒体素材,Pexels API,https://www.pexels.com/api,默认 200 次/小时、20000 次/月；按规范署名可申请无限,★★★★☆
+002,2026-11-08,一人公司,边缘推理,Cloudflare Workers AI,https://developers.cloudflare.com/workers-ai,"免费 10,000 Neurons/天，每天 00:00 UTC 重置；超出需 Workers Paid，$0.011/1,000 Neurons。部分新模型（如 Kimi K2.6、GLM 5.x、DeepSeek V4）需付费方式才能调用",★★★★☆
+002,2026-11-08,一人公司,语义搜索,Exa,https://exa.ai,Starter 免费，每月 $10 credits + 注册送 $10；10 QPS 搜索。按量价：Lite 搜索 $4/千次、Contents $1/千页，免费额度约够每月 2000 次 Lite 搜索,★★★★★
+002,2026-11-08,一人公司,Agent工具箱,Composio,https://composio.dev,"Hobby $0，每月 100,000 次工具调用、50,000 次触发器、3 个成员、送 $2 credits；托管 App 前 1,000 个连接账号免费；到上限即停，不会意外扣费",★★★★★
+002,2026-11-08,外贸,外贸翻译,DeepL API,https://www.deepl.com/pro-api,"新用户为 API Developer 计划，免费累计 1,000,000 字符，用完不重置，需升级 Growth；旧 API Free（每月 50 万字符）已停止新购。免费计划单文档最大 10 MB",★★★★☆（免费额度一次性，适合起步）
+002,2026-11-08,外贸,外贸数据,UN Comtrade,https://comtradeplus.un.org,免费 Basic 账号 500 次/天，每次最多 10 万条记录，限速 5 次/秒；不注册的 preview 接口每次 500 条、1 次/秒,★★★★☆
+002,2026-11-08,物流,物流路线,openrouteservice,https://openrouteservice.org,Standard 免费计划（每天/每分钟）路线 2000/40、距离矩阵 500/40、等时圈 500/20、地理编码 3000/100、路线优化 500/40；也可自部署无上限,★★★★☆
+002,2026-11-08,自媒体,自媒体数据,YouTube Data API,https://developers.google.com/youtube/v3,"默认每天 100 次 search.list、100 次 videos.insert，其余接口合计 10,000 单位/天；读取一般 1 单位，写入一般 50 单位；可申请提额",★★★★☆
+002,2026-11-08,自媒体,自媒体配音,ElevenLabs,https://elevenlabs.io,"Free 计划每月含 TTS v4 10,000 字符（约 10 分钟）或 Flash/Turbo 20,000 字符；Scribe v2 语音转文字 4 小时 30 分钟；音效 8 次生成",★★★★☆（免费额度少，适合试样）
+002,2026-11-08,一人公司,一人公司效率,Notion API,https://developers.notion.com,API 免费；非 Business/Enterprise 工作区每个连接 180 次/分钟（平均 3 次/秒），查询数据源约 3 次/秒；单次请求最多 1000 个块、500KB,★★★★★
+002,2026-11-08,一人公司,通知客服,Telegram Bot API,https://core.telegram.org/bots/api,免费；单聊约 1 条/秒，群里 20 条/分钟，群发约 30 条/秒；发文件最大 50 MB，下载最大 20 MB,★★★★☆
+003,2026-11-09,一人公司,爬取平台,Apify,https://apify.com,Free 每月含 $5 平台额度（可用于 Apify Store 里的 Actor 或自己的 Actor）；计算单元 $0.2/CU；最多 5 个并发运行,★★★★★
+003,2026-11-09,一人公司,搜索,Brave Search API,https://brave.com/search/api,"Search 计划每月含 $5 免费额度，按 $5/千次请求计，约合 1,000 次；容量 50 次/秒。Answers 另计 $4/千次查询 + token 费",★★★★☆
+003,2026-11-09,外贸,外贸获客,Hunter,https://hunter.io,Free 每月 50 credits；找到 1 个邮箱用 1 credit（没找到不扣），验证 1 个邮箱用 0.5 credit；Discover AI 搜索每月 30 次；每个序列最多 500 收件人,★★★★☆（每月仅 50 credits，适合精准小批量）
+003,2026-11-09,外贸,外贸数据,REST Countries,https://restcountries.com,"Free $0，每月 1,000 次请求、2 个 API Key、数据每 24 小时同步；页面注明所有计划支持商用，并含全部接口和字段",★★★★☆
+003,2026-11-09,外贸,外贸日历,Nager.Date,https://date.nager.at/Api,页面标注 200+ 国家、无速率限制（No Rate Limits）、支持 CORS；开源项目，可在 GitHub 自托管,★★★☆☆（简单但很实用）
+003,2026-11-09,物流,物流天气,Open-Meteo,https://open-meteo.com,"免费版仅限非商业用途，600 次/分钟、5,000 次/小时、10,000 次/天、300,000 次/月，无可用性保证；商用需订阅（Standard 100 万次/月）；数据需署名（CC BY 4.0）",★★★☆☆（正式商用请改用付费版）
+003,2026-11-09,一人公司,AI模型,Cohere,https://cohere.com,"Trial Key 免费但有限：每月 1,000 次 API 调用；Chat 各模型 20 次/分钟；Embed 2,000 条输入/分钟；Rerank 10 次/分钟；语音转写 5 次/分钟；生产用需付费 Key",★★★★☆（1000 次/月适合评估和小项目）
+003,2026-11-09,自媒体,自媒体素材,Unsplash API,https://unsplash.com/developers,"新应用为 Demo 模式，50 次请求/小时；申请 Production 获批后 1,000 次/小时；只统计 api.unsplash.com 的 JSON 请求，图片文件请求不计；使用须按规范标注摄影师和 Unsplash",★★★☆☆（与 Pexels 互补）
+003,2026-11-09,自媒体,自媒体转写,AssemblyAI,https://www.assemblyai.com,免费层含最多 185 小时预录音频转写 + 最多 333 小时实时转写；之后按量：Universal-2 $0.15/小时、Universal-3.5 Pro $0.21/小时；说话人分离 +$0.02/小时；免费计划实时连接每分钟最多新开 5 个,★★★★☆
+003,2026-11-09,一人公司,一人公司后端,Supabase,https://supabase.com,Free 计划 $0/月：API 请求不限、5 万月活用户、500 MB 数据库、1 GB 文件存储、5 GB 出口流量、Realtime 200 并发连接 / 每月 200 万条消息；项目闲置 1 周会被暂停；无自动备份,★★★★★
+004,2026-11-10,一人公司,语音识别,Deepgram,https://deepgram.com,定价页显示 Free 为 $200 额度，之后按量付费；无最低消费、无过期、无需信用卡,★★★★☆
+004,2026-11-10,一人公司,地理位置,Geoapify,https://www.geoapify.com,"Free 每天 3,000 credits，最高 5 请求/秒；官方 FAQ 注明可用于商业项目，需在额度内",★★★★☆
+004,2026-11-10,一人公司,搜索,Serper,https://serper.dev,"首页写明注册送 2,500 次免费查询；付费 Starter $50 / 5 万 credits",★★★★☆
+004,2026-11-10,自媒体,自媒体素材,Pixabay API,https://pixabay.com/api/docs/,默认每个 Key 每 60 秒 100 次请求；要求缓存结果 24 小时并标注来源,★★★☆☆
+004,2026-11-10,一人公司,自动排期,Cal.com,https://cal.com,Free 为 1 用户、无限链接与日历、邮件和短信通知；定价页写明免费无使用限制,★★★★☆
+004,2026-11-10,一人公司,新闻,GNews,https://gnews.io,Free 每天 100 请求、每次最多 10 篇、12 小时延迟、近 30 天历史、正文截断 250 字符；仅限非商业使用,★★★☆☆
+004,2026-11-10,一人公司,邮件营销,Brevo,https://www.brevo.com,官方定价页 FAQ 写明账号通过审核后可每天发送最多 300 封邮件,★★★★☆
+004,2026-11-10,一人公司,IP定位,IPinfo Lite,https://ipinfo.io/lite,官方页面写明国家级定位与 ASN，无月费、无需信用卡、API 请求无限制,★★★☆☆
+004,2026-11-10,一人公司,金融数据,Alpha Vantage,https://www.alphavantage.co,官方支持页写明免费每天 25 次请求；已验证开源/教育项目可无限,★★★☆☆
+004,2026-11-10,一人公司,推送通知,ntfy,https://ntfy.sh,官方文档默认配置为每访客 60 次请求突发、每 5 秒补充 1 次；ntfy.sh 公共服务实际限额以官网为准,★★★★☆
+005,2026-11-11,外贸,外贸汇率,ExchangeRate-API,https://www.exchangerate-api.com,定价页显示 Free 每月 1.5K 次请求，每天更新一次，含历史数据,★★★★☆
+005,2026-11-11,外贸,外贸汇率,Open Exchange Rates,https://openexchangerates.org,"页面显示 Free 计划每小时更新（基础货币为 USD），每月最多 1,000 次请求",★★★☆☆
+005,2026-11-11,一人公司,搜索抓取,SerpApi,https://serpapi.com,定价页显示 Free 每月 250 次搜索，吞吐每小时 50 次,★★★★☆
+005,2026-11-11,一人公司,网页抓取,ScrapingBee,https://www.scrapingbee.com,"定价页显示注册即送 1,000 个免费 API credits（一次性试用额度）",★★★★☆
+005,2026-11-11,一人公司,AI搜索,Linkup,https://www.linkup.so,"定价页写明可免费运行 4,000 次查询，之后按量付费；具体计费以官方控制台为准",★★★★☆
+005,2026-11-11,一人公司,开发者生态,GitHub REST API,https://docs.github.com/en/rest,"官方文档：未认证请求每小时 60 次；认证用户每小时 5,000 次",★★★★☆
+005,2026-11-11,一人公司,Agent记忆,Upstash,https://upstash.com,定价页显示 Free 为 250 MB 数据、每月 10 GB 带宽、每月 50 万次命令,★★★★☆
+005,2026-11-11,一人公司,一人公司后端,Neon,https://neon.com,定价页显示 Free 永久：100 个项目、每项目每月 100 CU 小时、每项目 1 GB 存储,★★★★☆
+005,2026-11-11,一人公司,网页抓取,Scrapingdog,https://www.scrapingdog.com,定价页显示 Free 永久 100 次请求 credits，1 并发，可访问所有 API,★★★☆☆
+005,2026-11-11,自媒体,社媒发布,Ayrshare,https://www.ayrshare.com,定价页显示 28 天免费试用；试用后保留 Launch 或切换付费计划，具体额度以官方控制台为准,★★★☆☆
+006,2026-11-12,一人公司,邮件外联,Postmark,https://postmarkapp.com,定价页：Free $0/月，每月 100 封，不过期、不允许超额；付费 Basic $15/月起 1 万封,★★★★☆
+006,2026-11-12,一人公司,搜索,SearchApi,https://www.searchapi.io,定价页：注册送 100 次免费请求；付费 Developer $40/月含 1 万次；失败请求不计费,★★★★☆
+006,2026-11-12,一人公司,推送通知,Pushover,https://www.pushover.net,"官网：每位用户每月可免费发送最多 10,000 条消息",★★★★☆
+006,2026-11-12,一人公司,一人公司效率,Google Sheets API,https://developers.google.com/sheets/api,官方限额页：读请求每分钟每项目 300 次、每用户每项目 60 次；写请求同样 300/60,★★★★★
+006,2026-11-12,外贸,外贸IP定位,ipapi.co,https://ipapi.co,"定价页：Free 每月 30,000 次、每天最多 1,000 次，仅适合测试/开发，非生产使用，无支持",★★★☆☆
+006,2026-11-12,外贸,外贸合规,Abstract VAT API,https://www.abstractapi.com/api/vat-validation-rates-api,定价页：Free $0，100 次请求、每秒 1 次；Standard $99/月,★★★★☆
+006,2026-11-12,一人公司,邮件测试与发送,Mailtrap,https://mailtrap.io,"定价页：Free $0/月，最多 4,000 封，每天 150 封，1 个域名，日志保留 3 天",★★★☆☆
+006,2026-11-12,自媒体,自媒体社群,Discord API,https://discord.com/developers/docs,官方限速文档：按路由与全局限速，具体数字以响应头 X-RateLimit 与官方控制台为准,★★★☆☆
+006,2026-11-12,一人公司,一人公司效率,Airtable API,https://airtable.com/developers/web/api/introduction,官方定价页确认有 Free 免费计划，具体记录数与调用额度以官方控制台为准,★★★☆☆
+006,2026-11-12,一人公司,AI模型,Together AI,https://www.together.ai,定价页：Ternary Bonsai 27B 标注 Free；其余模型按 token 计费，试用额度以官方控制台为准,★★★☆☆
+007,2026-11-13,一人公司,向量数据库,Pinecone,https://www.pinecone.io,定价页：Starter 免费，最多 5 个索引、2GB 存储、每月 200 万写入单元、100 万读取单元；内置嵌入模型每月 500 万 token；仅 us-east-1,★★★★☆
+007,2026-11-13,一人公司,向量数据库,Qdrant Cloud,https://qdrant.tech,定价页：Free Tier 永久免费，单节点 0.5 vCPU / 1GB RAM / 4GB 磁盘，含部分模型的免费云端推理,★★★★☆
+007,2026-11-13,一人公司,Agent记忆,Mem0,https://mem0.ai,定价页：Free 不限终端用户；前 30 天每月 1 万次添加、1000 次检索；用自己的 LLM Key 为每月 5 万次添加、1 万次检索；超出按量计费且可设月度上限,★★★★★
+007,2026-11-13,一人公司,代码沙盒,E2B,https://e2b.dev,定价页：Hobby 免费，含一次性 100 美元用量额度；单次会话最长 1 小时；10 个并发沙盒；Pro 为 150 美元/月,★★★★☆
+007,2026-11-13,一人公司,云浏览器,Browserbase,https://www.browserbase.com,定价页：Free 每月 0 美元，3 个并发浏览器、1 浏览器小时、1000 次 Search、1000 次 Fetch，单会话 15 分钟,★★★★☆
+007,2026-11-13,一人公司,Agent观测,LangSmith,https://www.langchain.com/langsmith,定价页：Developer 每席位每月 0 美元，含 5000 个基础 trace/月，之后按量付费；1 个席位，社区支持,★★★☆☆
+007,2026-11-13,自媒体,自媒体素材处理,Cloudinary,https://cloudinary.com,定价页：Free 永久免费，每月 25 credits（1 credit = 1000 次转换 或 1GB 存储 或 1GB 图片带宽）；3 用户；含 MCP 服务器访问,★★★★☆
+007,2026-11-13,物流,物流运费,Shippo,https://www.shippo.com,API 定价页：每月前 30 张面单免费，之后 7 美分/张；追踪 2 美分/次、比价 1 美分/次生成（需另付）；官方文档称有托管 MCP Server,★★★☆☆
+007,2026-11-13,物流,物流天气,WeatherAPI.com,https://www.weatherapi.com,定价页：Free 永久免费，每月 10 万次调用，含 3 天预报与前 1 天历史、实时、搜索、IP 定位；官方称免费版可用于商业应用；含 MCP 服务器,★★★☆☆
+007,2026-11-13,物流,物流天气,OpenWeather,https://openweathermap.org/api,定价页：Free 每分钟 60 次、每月 100 万次，含当前天气与 5 天 3 小时预报；One Call 每天前 1000 次免费，超出 0.0015 美元/次,★★★☆☆
+008,2026-11-14,一人公司,一人公司协作,Slack API,https://docs.slack.dev,官方限流页：发消息约每频道每秒 1 条；Web API 按方法分 Tier 1–4（每分钟 1+ / 20+ / 50+ / 100+ 次）；Events API 每小时 3 万次投递,★★★★☆
+008,2026-11-14,一人公司,自动化平台,Make,https://www.make.com,定价页 FAQ：Free 计划每月 1000 credits，含 1 个数据存储（1MB）；多数动作消耗 1 credit,★★★★☆
+008,2026-11-14,一人公司,自动化平台,Zapier,https://zapier.com,定价页：Free forever $0，含 Zaps、Tables、Forms，每月 100 tasks，两步 Zap,★★★☆☆
+008,2026-11-14,外贸,外贸翻译,Google Cloud Translation,https://cloud.google.com/translate,"定价页：每月前 500,000 字符免费（以 10 美元月度抵扣体现），超出按 $20/百万字符起",★★★★☆
+008,2026-11-14,一人公司,新闻数据,NewsAPI,https://newsapi.org,定价页：Developer 免费，每天 100 次请求，文章延迟 24 小时，可搜最近一个月，仅限开发用途,★★★☆☆
+008,2026-11-14,一人公司,模型网关,Vercel AI Gateway,https://vercel.com/ai-gateway,定价页：免费层每月含 $5 额度，限 Free Tier 可用模型；付费层零加价,★★★★☆
+008,2026-11-14,一人公司,地图地理,Google Maps Platform,https://developers.google.com/maps,"定价页：按事件计费，各 SKU 有月度免费上限，例如 Dynamic Maps 每月 10,000 次免费；其余以官方控制台为准",★★★☆☆
+008,2026-11-14,一人公司,地图地理,Mapbox,https://www.mapbox.com,定价页称各产品有免费档（Navigation SDK 每月 10 个活跃用户免费）；API 具体数字以官方控制台为准,★★★☆☆
+008,2026-11-14,一人公司,AI模型,Mistral API,https://mistral.ai,定价页显示 Free 计划，限额不公开数字，以官方控制台为准,★★★☆☆
+008,2026-11-14,一人公司,短链分析,Bitly,https://bitly.com,定价页：Free 每月 5 条链接、2 个二维码、3 个自定义后缀，点击与扫码统计不限；接口额度以官方控制台为准,★★☆☆☆
+009,2026-11-15,一人公司,Agent观测,Langfuse,https://langfuse.com,"Hobby 免费：每月 5 万 units、保留 30 天数据、2 个用户、摄取 1,000 请求/分钟、通用 API 30 请求/分钟；开源可自托管免费",★★★★★
+009,2026-11-15,一人公司,报错监控,Sentry,https://sentry.io,Developer 免费：仅 1 个用户、5k 错误、5M spans、5GB 日志、50 次会话回放、10 个自定义仪表盘、30 天回溯，含 MCP 访问,★★★★☆
+009,2026-11-15,一人公司,产品分析,PostHog,https://posthog.com,每月免费且按月重置：分析 100 万 events、错误追踪 10 万 exceptions、AI Observability 10 万 events、问卷 1500 份回复,★★★★☆
+009,2026-11-15,一人公司,邮箱自动化,Gmail API,https://developers.google.com/workspace/gmail,"官方称标准使用无额外费用；每项目 120 万 quota units/分钟，每用户 6,000/分钟；每日计费阈值 8,000 万 units；单封邮件最多 500 收件人",★★★★★
+009,2026-11-15,一人公司,日程排期,Google Calendar API,https://developers.google.com/workspace/calendar,"官方称标准使用无额外费用；每项目 10,000 请求/分钟，每用户 600/分钟；每日计费阈值 100 万请求",★★★★☆
+009,2026-11-15,一人公司,文件存储,Google Drive API,https://developers.google.com/workspace/drive,"每项目 100 万 quota units/分钟，每用户 325,000/分钟，每项目每日出站 1 TB；Workspace 用户每日上传上限 750 GB；每日计费阈值详见官方页",★★★★☆
+009,2026-11-15,一人公司,对象存储,Cloudflare R2,https://developers.cloudflare.com/r2,"每月免费 10 GB 存储、100 万次 Class A、1,000 万次 Class B 操作；出口流量免费",★★★★☆
+009,2026-11-15,一人公司,无服务器,Cloudflare Workers,https://developers.cloudflare.com/workers,"Free：每天 10 万请求、每次调用 10 毫秒 CPU；Workers KV 每天 10 万次读、1,000 次写，存 1 GB；日志每天 20 万事件保留 3 天",★★★★★
+009,2026-11-15,物流,物流追踪,AfterShip Tracking,https://www.aftership.com/tracking,"Free 计划的具体单量以官方控制台为准；付费 Essentials $29/月含 6,000 单/年，超出 $0.08/单；API 与 Webhook 在 Premium（$59/月起，10 请求/秒）",★★★☆☆
+009,2026-11-15,一人公司,全球收款,Stripe,https://stripe.com,无开户费、无月费；按成功交易收费，美国国内卡 2.9% + 30¢，国际卡另加 1.5%，需货币转换另加 1%,★★★★☆

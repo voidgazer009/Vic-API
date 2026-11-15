@@ -1,0 +1,1713 @@
+[
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Google Gemini API",
+  "tagline": "大脑｜AI 模型",
+  "fields": {
+   "网址": "https://aistudio.google.com ；文档 https://ai.google.dev/gemini-api/docs",
+   "注册": "Google 账号登录 AI Studio → Get API key → 自动建项目，免费层无需绑卡",
+   "额度": "Free 层（活跃项目即可），按 RPM/TPM/RPD 计，按项目计算不按 Key；每日额度太平洋时间午夜重置；具体每模型限额在 AI Studio 的 Rate limit 页查看",
+   "用法": "POST generativelanguage.googleapis.com，或 google-genai SDK；支持 OpenAI 兼容端点",
+   "Agent 适配": "函数调用、结构化输出、长上下文、多模态（图/音/视频）",
+   "场景": "外贸开发信撰写与多语种翻译、产品图识别、自媒体脚本",
+   "匹配度": "★★★★★"
+  },
+  "category": "AI模型",
+  "url": "https://aistudio.google.com",
+  "direction": "一人公司",
+  "slug": "google-gemini-api"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "OpenRouter",
+  "tagline": "大脑路由器｜一个 Key 调几百个模型",
+  "fields": {
+   "网址": "https://openrouter.ai ；文档 https://openrouter.ai/docs",
+   "注册": "邮箱/Google/GitHub 登录 → Keys → Create Key",
+   "额度": "模型 ID 以 :free 结尾的免费模型，20 次/分钟；累计充值不足 10 credits 时 50 次/天，≥10 时 1000 次/天",
+   "用法": "OpenAI 兼容，base_url=https://openrouter.ai/api/v1",
+   "Agent 适配": "模型回退（fallback）、统一计费，接 Cline/Claude Code/n8n 都行",
+   "场景": "同一任务对比多家模型，低成本跑批量",
+   "匹配度": "★★★★★"
+  },
+  "category": "模型路由",
+  "url": "https://openrouter.ai",
+  "direction": "一人公司",
+  "slug": "openrouter"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Groq",
+  "tagline": "极速推理｜毫秒级响应",
+  "fields": {
+   "网址": "https://console.groq.com ；文档 https://console.groq.com/docs",
+   "注册": "邮箱或 Google 登录 → API Keys",
+   "额度（免费计划）": "openai/gpt-oss-120b 30 RPM、1K RPD、8K TPM、200K TPD；qwen3.8-27b 同级；whisper-large-v3 20 RPM、2K RPD、每小时 7.2K 音频秒",
+   "用法": "OpenAI 兼容 https://api.groq.com/openai/v1",
+   "Agent 适配": "工具调用、内置浏览器搜索/代码执行、远程 MCP",
+   "场景": "实时客服、语音转文字（会议/短视频字幕）",
+   "匹配度": "★★★★☆"
+  },
+  "category": "极速推理",
+  "url": "https://console.groq.com",
+  "direction": "一人公司",
+  "slug": "groq"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Jina Reader",
+  "tagline": "眼睛｜任意网页转 Markdown",
+  "fields": {
+   "网址": "https://jina.ai/reader",
+   "注册": "免 Key 即可用；要更高额度在 jina.ai 领免费 Key（新 Key 送 1000 万 tokens）",
+   "额度": "r.jina.ai 无 Key 20 RPM，免费 Key 500 RPM；s.jina.ai 搜索需 Key，100 RPM",
+   "用法": "在网址前加 https://r.jina.ai/ ，例 curl https://r.jina.ai/https://example.com",
+   "Agent 适配": "官方 MCP mcp.jina.ai；支持 PDF、图片说明",
+   "场景": "抓竞品页、读外贸客户官网、读论文 PDF 喂给模型",
+   "匹配度": "★★★★★"
+  },
+  "category": "网页读取",
+  "url": "https://jina.ai/reader",
+  "direction": "一人公司",
+  "slug": "jina-reader"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Tavily",
+  "tagline": "搜索｜为 Agent 设计的搜索 API",
+  "fields": {
+   "网址": "https://tavily.com ；控制台 https://app.tavily.com",
+   "注册": "登录即得 Key，无需信用卡",
+   "额度": "每月 1000 credits；基础搜索 1 credit/次，高级 2；Extract 每 5 个网址 1 credit",
+   "用法": "POST /search，Python/JS SDK",
+   "Agent 适配": "官方 MCP、Agent Skills、Claude Code/Cursor 集成",
+   "场景": "选品调研、行业新闻追踪、客户背景调查",
+   "匹配度": "★★★★★"
+  },
+  "category": "搜索",
+  "url": "https://tavily.com",
+  "direction": "一人公司",
+  "slug": "tavily"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Firecrawl",
+  "tagline": "手｜整站爬取 + 结构化提取",
+  "fields": {
+   "网址": "https://www.firecrawl.dev ；文档 https://docs.firecrawl.dev",
+   "注册": "注册即得 Key，无需信用卡",
+   "额度": "免费每月 1000 credits（约 1000 页或 500 次搜索），2 并发；scrape 10 次/分钟；Agent 每天 5 次免费",
+   "用法": "POST /scrape /crawl /map /search；开源可自部署",
+   "Agent 适配": "MCP、JSON Schema 结构化提取",
+   "场景": "批量抓 B2B 黄页做线索表、监控竞品价格",
+   "匹配度": "★★★★☆"
+  },
+  "category": "爬取提取",
+  "url": "https://www.firecrawl.dev",
+  "direction": "一人公司",
+  "slug": "firecrawl"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Resend",
+  "tagline": "外联｜开发者邮件 API",
+  "fields": {
+   "网址": "https://resend.com",
+   "注册": "邮箱/GitHub 注册 → 验证发信域名（DKIM/SPF） → API Keys",
+   "额度": "免费每月 3000 封，每天 100 封，3 个域名，3 个收件箱，1 个 webhook",
+   "用法": "POST https://api.resend.com/emails，Node/Python SDK",
+   "Agent 适配": "收件箱支持 Agent 访问，可做自动收发",
+   "场景": "外贸开发信、订单通知、自动回复（营销邮件需对方同意并带退订）",
+   "匹配度": "★★★★☆"
+  },
+  "category": "邮件外联",
+  "url": "https://resend.com",
+  "direction": "一人公司",
+  "slug": "resend"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Frankfurter",
+  "tagline": "汇率｜免 Key 开源汇率 API",
+  "fields": {
+   "网址": "https://frankfurter.dev",
+   "注册": "无需注册、无需 Key",
+   "额度": "无月/日上限（仅防滥用限速），可商用；239 种货币、108 个央行和官方来源，数据可回溯到 1948 年",
+   "用法": "curl https://api.frankfurter.dev/v2/rate/usd/cny",
+   "Agent 适配": "官方 MCP 与 llms.txt",
+   "场景": "外贸报价自动换算、发票多币种、利润核算",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸汇率",
+  "url": "https://frankfurter.dev",
+  "direction": "外贸",
+  "slug": "frankfurter"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "17TRACK API",
+  "tagline": "物流｜全球包裹追踪",
+  "fields": {
+   "网址": "https://api.17track.net ；文档 https://api.17track.net/en/doc",
+   "注册": "注册 API 账号 → 获取 Key → 设置 Webhook",
+   "额度": "2026-01-07 起，新账号一次性赠送 200 个单号（不再每月发放）；同一单号自动追踪不重复扣费",
+   "用法": "先 register 注册单号，再 gettrackinfo 或 webhook 推送",
+   "Agent 适配": "webhook 推送状态给 Agent，自动通知客户",
+   "场景": "跨境电商发货追踪、异常件提醒",
+   "匹配度": "★★★☆☆（额度有限，适合试跑）"
+  },
+  "category": "物流追踪",
+  "url": "https://api.17track.net",
+  "direction": "物流",
+  "slug": "17track-api"
+ },
+ {
+  "issue": "001",
+  "date": "2026-11-06",
+  "name": "Pexels API",
+  "tagline": "素材｜免费图片和视频",
+  "fields": {
+   "网址": "https://www.pexels.com/api",
+   "注册": "Pexels 账号 → 申请 API Key（即时下发）",
+   "额度": "默认 200 次/小时、20000 次/月；按规范署名可申请无限",
+   "用法": "Header Authorization: KEY，GET https://api.pexels.com/v1/search?query=...",
+   "Agent 适配": "自动给文章/短视频配图配 B-roll",
+   "场景": "自媒体配图、产品页背景、短视频素材",
+   "注意": "需显示 Pexels 链接与作者署名",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体素材",
+  "url": "https://www.pexels.com/api",
+  "direction": "自媒体",
+  "slug": "pexels-api"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "Cloudflare Workers AI",
+  "tagline": "边缘推理｜每日免费推理",
+  "fields": {
+   "网址": "https://developers.cloudflare.com/workers-ai ；定价 https://developers.cloudflare.com/workers-ai/platform/pricing/",
+   "注册": "Cloudflare 账号（免费 Workers 计划即可）→ 控制台 AI → Workers AI → 创建 API Token，记下 Account ID",
+   "额度": "免费 10,000 Neurons/天，每天 00:00 UTC 重置；超出需 Workers Paid，$0.011/1,000 Neurons。部分新模型（如 Kimi K2.6、GLM 5.x、DeepSeek V4）需付费方式才能调用",
+   "用法": "OpenAI 兼容端点 https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/v1 ，或 Workers 里 env.AI.run()",
+   "Agent 适配": "函数调用、JSON 模式、官方 MCP 服务器与 Agents SDK；同时有 LLM、向量、Whisper 语音、FLUX 绘图",
+   "场景": "便宜的批量文本分类/摘要、给知识库做向量、短视频语音转字幕",
+   "匹配度": "★★★★☆"
+  },
+  "category": "边缘推理",
+  "url": "https://developers.cloudflare.com/workers-ai",
+  "direction": "一人公司",
+  "slug": "cloudflare-workers-ai"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "Exa",
+  "tagline": "语义搜索｜为 AI 设计的搜索引擎",
+  "fields": {
+   "网址": "https://exa.ai ；定价 https://exa.ai/pricing",
+   "注册": "dashboard.exa.ai 登录即得 Key，无需付款方式",
+   "额度": "Starter 免费，每月 $10 credits + 注册送 $10；10 QPS 搜索。按量价：Lite 搜索 $4/千次、Contents $1/千页，免费额度约够每月 2000 次 Lite 搜索",
+   "用法": "POST https://api.exa.ai/search ，Python/JS SDK；支持人物、公司、学术专用索引",
+   "Agent 适配": "官方 MCP、Claude Connector、ChatGPT 插件、50+ 集成",
+   "场景": "按描述找潜在客户公司、找同类竞品、追踪行业新闻",
+   "匹配度": "★★★★★"
+  },
+  "category": "语义搜索",
+  "url": "https://exa.ai",
+  "direction": "一人公司",
+  "slug": "exa"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "Composio",
+  "tagline": "Agent 工具箱｜一个接口连千个 App",
+  "fields": {
+   "网址": "https://composio.dev ；定价 https://composio.dev/pricing",
+   "注册": "dashboard.composio.dev 注册，Hobby 计划无需信用卡",
+   "额度": "Hobby $0，每月 100,000 次工具调用、50,000 次触发器、3 个成员、送 $2 credits；托管 App 前 1,000 个连接账号免费；到上限即停，不会意外扣费",
+   "用法": "pip install composio ，用 Session 给 Agent 加载 Gmail、Slack、Notion、Sheets 等工具",
+   "Agent 适配": "MCP、OAuth 托管、工具搜索（元工具不计费），接 OpenAI/Claude/LangChain",
+   "场景": "让 Agent 直接发 Gmail、写表格、建日程，不用自己写 OAuth",
+   "匹配度": "★★★★★"
+  },
+  "category": "Agent工具箱",
+  "url": "https://composio.dev",
+  "direction": "一人公司",
+  "slug": "composio"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "DeepL API",
+  "tagline": "外贸翻译｜商务级多语种",
+  "fields": {
+   "网址": "https://www.deepl.com/pro-api ；文档 https://developers.deepl.com",
+   "注册": "DeepL 官网选 API 计划注册（已有网页版账号需另建账号）→ 账户页拿 API Key",
+   "额度": "新用户为 API Developer 计划，免费累计 1,000,000 字符，用完不重置，需升级 Growth；旧 API Free（每月 50 万字符）已停止新购。免费计划单文档最大 10 MB",
+   "用法": "POST /v2/translate ，Header Authorization: DeepL-Auth-Key KEY；官方 Python/Node/Java 等 SDK",
+   "Agent 适配": "已上线 MCP（Copilot/ChatGPT/Claude），支持术语表、正式/非正式语气",
+   "场景": "开发信与询盘回复多语种、产品说明书 PDF/Word 整篇翻译",
+   "匹配度": "★★★★☆（免费额度一次性，适合起步）"
+  },
+  "category": "外贸翻译",
+  "url": "https://www.deepl.com/pro-api",
+  "direction": "外贸",
+  "slug": "deepl-api"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "UN Comtrade",
+  "tagline": "外贸数据｜联合国全球进出口统计",
+  "fields": {
+   "网址": "https://comtradeplus.un.org ；说明 https://uncomtrade.org/docs/subscriptions",
+   "注册": "免费注册 UN Comtrade 账号 → My Comtrade → My API portal 申请免费订阅 Key",
+   "额度": "免费 Basic 账号 500 次/天，每次最多 10 万条记录，限速 5 次/秒；不注册的 preview 接口每次 500 条、1 次/秒",
+   "用法": "GET https://comtradeapi.un.org/data/v1/get/C/A/HS ，按 HS 编码、国家、年份查询；有 Python/R 库",
+   "Agent 适配": "结构化 JSON，适合让 Agent 自动出「某产品主要进口国」报告",
+   "场景": "选品与目标市场分析、按 HS 编码看各国进口额和趋势",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸数据",
+  "url": "https://comtradeplus.un.org",
+  "direction": "外贸",
+  "slug": "un-comtrade"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "openrouteservice",
+  "tagline": "物流｜路线与配送优化",
+  "fields": {
+   "网址": "https://openrouteservice.org ；套餐 https://openrouteservice.org/plans/",
+   "注册": "HeiGIT 账号注册 → 控制台生成 Key（Standard 计划免费）",
+   "额度": "Standard 免费计划（每天/每分钟）路线 2000/40、距离矩阵 500/40、等时圈 500/20、地理编码 3000/100、路线优化 500/40；也可自部署无上限",
+   "用法": "GET https://api.openrouteservice.org/v2/directions/driving-car?api_key=KEY&start=…&end=…",
+   "Agent 适配": "开源（基于 OpenStreetMap），Python 库 openrouteservice-py",
+   "场景": "本地配送排线、仓库到客户的时效和成本估算、门店覆盖范围",
+   "匹配度": "★★★★☆"
+  },
+  "category": "物流路线",
+  "url": "https://openrouteservice.org",
+  "direction": "物流",
+  "slug": "openrouteservice"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "YouTube Data API",
+  "tagline": "自媒体｜选题与数据分析",
+  "fields": {
+   "网址": "https://developers.google.com/youtube/v3 ；配额说明 https://developers.google.com/youtube/v3/getting-started",
+   "注册": "Google Cloud 控制台建项目 → 启用 YouTube Data API v3 → 创建 API Key（上传/评论需 OAuth）",
+   "额度": "默认每天 100 次 search.list、100 次 videos.insert，其余接口合计 10,000 单位/天；读取一般 1 单位，写入一般 50 单位；可申请提额",
+   "用法": "GET https://www.googleapis.com/youtube/v3/search?part=snippet&q=…&key=KEY",
+   "Agent 适配": "官方各语言客户端库，Agent 可自动拉热门视频、标题、评论做分析",
+   "场景": "找爆款选题、分析竞品频道、自动上传视频和设缩略图",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体数据",
+  "url": "https://developers.google.com/youtube/v3",
+  "direction": "自媒体",
+  "slug": "youtube-data-api"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "ElevenLabs",
+  "tagline": "自媒体｜AI 配音与语音转文字",
+  "fields": {
+   "网址": "https://elevenlabs.io ；API 定价 https://elevenlabs.io/pricing/api",
+   "注册": "邮箱/Google 注册 → Developers → API Keys",
+   "额度": "Free 计划每月含 TTS v4 10,000 字符（约 10 分钟）或 Flash/Turbo 20,000 字符；Scribe v2 语音转文字 4 小时 30 分钟；音效 8 次生成",
+   "用法": "POST https://api.elevenlabs.io/v1/text-to-speech/{voice_id} ，Python/JS SDK",
+   "Agent 适配": "90+ 语言、实时低延迟模型，可做语音 Agent",
+   "场景": "短视频配音、多语种口播、播客和会议转写",
+   "匹配度": "★★★★☆（免费额度少，适合试样）"
+  },
+  "category": "自媒体配音",
+  "url": "https://elevenlabs.io",
+  "direction": "自媒体",
+  "slug": "elevenlabs"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "Notion API",
+  "tagline": "一人公司｜Agent 的数据库与知识库",
+  "fields": {
+   "网址": "https://developers.notion.com ；限额 https://developers.notion.com/reference/request-limits",
+   "注册": "notion.so/developers 新建 Integration → 拿 Token → 在页面里把该 Integration 加入",
+   "额度": "API 免费；非 Business/Enterprise 工作区每个连接 180 次/分钟（平均 3 次/秒），查询数据源约 3 次/秒；单次请求最多 1000 个块、500KB",
+   "用法": "POST https://api.notion.com/v1/pages ，官方 JS SDK 自动重试 429",
+   "Agent 适配": "官方 MCP、Webhooks、Agents 接口",
+   "场景": "Agent 自动写客户 CRM、内容日历、订单台账，人看 Notion 就行",
+   "匹配度": "★★★★★"
+  },
+  "category": "一人公司效率",
+  "url": "https://developers.notion.com",
+  "direction": "一人公司",
+  "slug": "notion-api"
+ },
+ {
+  "issue": "002",
+  "date": "2026-11-08",
+  "name": "Telegram Bot API",
+  "tagline": "一人公司｜免费通知与客服机器人",
+  "fields": {
+   "网址": "https://core.telegram.org/bots/api ；FAQ https://core.telegram.org/bots/faq",
+   "注册": "在 Telegram 找 @BotFather → /newbot → 拿到 Bot Token",
+   "额度": "免费；单聊约 1 条/秒，群里 20 条/分钟，群发约 30 条/秒；发文件最大 50 MB，下载最大 20 MB",
+   "用法": "POST https://api.telegram.org/bot{TOKEN}/sendMessage ，Webhook 或长轮询收消息",
+   "Agent 适配": "Agent 的手机遥控器：推送日报、审批按钮、接收语音和图片",
+   "场景": "订单/物流异常提醒、每日数据播报、海外客户客服",
+   "匹配度": "★★★★☆"
+  },
+  "category": "通知客服",
+  "url": "https://core.telegram.org/bots/api",
+  "direction": "一人公司",
+  "slug": "telegram-bot-api"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Apify",
+  "tagline": "爬取平台｜上万个现成爬虫，一键调用",
+  "fields": {
+   "网址": "https://apify.com ；定价 https://apify.com/pricing ；MCP 文档 https://docs.apify.com/platform/integrations/mcp",
+   "注册": "apify.com 邮箱/Google/GitHub 注册，Free 计划无需信用卡 → Console → Settings → API tokens",
+   "额度": "Free 每月含 $5 平台额度（可用于 Apify Store 里的 Actor 或自己的 Actor）；计算单元 $0.2/CU；最多 5 个并发运行",
+   "用法": "在 Apify Store 选 Actor（如网站内容抓取、Google 地图、社媒数据），REST 调用 POST https://api.apify.com/v2/acts/{actorId}/runs ，或用 JS/Python 客户端",
+   "Agent 适配": "官方 MCP 服务器 mcp.apify.com ，Agent 可自行搜索并运行 Actor；另有 Agent Skills 和插件",
+   "场景": "抓海外买家/竞品店铺、采集同行爆款内容、给 RAG 知识库批量爬网页",
+   "匹配度": "★★★★★"
+  },
+  "category": "爬取平台",
+  "url": "https://apify.com",
+  "direction": "一人公司",
+  "slug": "apify"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Brave Search API",
+  "tagline": "搜索｜Agent 专用搜索",
+  "fields": {
+   "网址": "https://brave.com/search/api ；定价 https://api-dashboard.search.brave.com/documentation/pricing",
+   "注册": "api-dashboard.search.brave.com 注册 → 订阅 Search 计划 → 生成 API Key（是否需绑定支付方式以注册页为准）",
+   "额度": "Search 计划每月含 $5 免费额度，按 $5/千次请求计，约合 1,000 次；容量 50 次/秒。Answers 另计 $4/千次查询 + token 费",
+   "用法": "GET https://api.search.brave.com/res/v1/web/search?q=关键词 ，请求头带 X-Subscription-Token ；LLM Context 接口直接返回适合喂给模型的片段",
+   "Agent 适配": "提供 LLM Context（给 Agent 的搜索结果）、Answers（带引用答案）、新闻/图片/视频/地点搜索；官方有 MCP 服务器（GitHub brave/brave-search-mcp-server）",
+   "场景": "Agent 联网查行业新闻、核对客户公司信息、给自媒体选题找热点",
+   "匹配度": "★★★★☆"
+  },
+  "category": "搜索",
+  "url": "https://brave.com/search/api",
+  "direction": "一人公司",
+  "slug": "brave-search-api"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Hunter",
+  "tagline": "外贸获客｜按域名找到决策人邮箱",
+  "fields": {
+   "网址": "https://hunter.io ；定价 https://hunter.io/pricing ；API 文档 https://hunter.io/api-documentation ；MCP https://hunter.io/mcp",
+   "注册": "hunter.io 邮箱注册 → Dashboard → API 页面获取免费 API Key",
+   "额度": "Free 每月 50 credits；找到 1 个邮箱用 1 credit（没找到不扣），验证 1 个邮箱用 0.5 credit；Discover AI 搜索每月 30 次；每个序列最多 500 收件人",
+   "用法": "GET https://api.hunter.io/v2/domain-search?domain=example.com&api_key=KEY ；另有 Email Finder、Email Verifier",
+   "Agent 适配": "官方 MCP 服务器，可让 Claude/ChatGPT 等直接调用 Hunter 找人找邮箱；有 Google Sheets 插件",
+   "场景": "拿到海外买家官网域名后，自动找采购负责人邮箱并验证，再接入开发信",
+   "匹配度": "★★★★☆（每月仅 50 credits，适合精准小批量）"
+  },
+  "category": "外贸获客",
+  "url": "https://hunter.io",
+  "direction": "外贸",
+  "slug": "hunter"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "REST Countries",
+  "tagline": "外贸数据｜国家币种区号速查",
+  "fields": {
+   "网址": "https://restcountries.com ；定价 https://restcountries.com/pricing",
+   "注册": "restcountries.com 点 Get an API key → 邮箱注册（免费，无需信用卡）→ 建 Key",
+   "额度": "Free $0，每月 1,000 次请求、2 个 API Key、数据每 24 小时同步；页面注明所有计划支持商用，并含全部接口和字段",
+   "用法": "GET https://api.restcountries.com/countries/v5/codes.alpha_2/CA ，请求头 Authorization: Bearer {KEY} ；可用 ?response_fields= 只取需要的字段",
+   "Agent 适配": "JSON 结构化、字段可裁剪，省 token；覆盖 250+ 国家、90+ 字段（币种、语言、国家区号、时区、边界等）",
+   "场景": "Agent 写开发信时自动匹配客户国家的语言、币种和时区；报价单自动带当地货币",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸数据",
+  "url": "https://restcountries.com",
+  "direction": "外贸",
+  "slug": "rest-countries"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Nager.Date",
+  "tagline": "外贸日历｜200+ 国家公共假期，免 Key",
+  "fields": {
+   "网址": "https://date.nager.at/Api ；GitHub https://github.com/nager/Nager.Date",
+   "注册": "无需注册、无需 Key",
+   "额度": "页面标注 200+ 国家、无速率限制（No Rate Limits）、支持 CORS；开源项目，可在 GitHub 自托管",
+   "用法": "GET https://nagerholidays.com/api/v4/Holidays/{国家代码}/{年份} ，如 /api/v4/Holidays/AT/2026",
+   "Agent 适配": "纯 JSON，返回日期、名称、是否全国假日、假日类型；Agent 一个函数就能调",
+   "场景": "开发信避开客户国家的假期；排发货、清关和付款提醒时避开休息日",
+   "匹配度": "★★★☆☆（简单但很实用）"
+  },
+  "category": "外贸日历",
+  "url": "https://date.nager.at/Api",
+  "direction": "外贸",
+  "slug": "nager-date"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Open-Meteo",
+  "tagline": "物流天气｜免 Key 天气与海运预报",
+  "fields": {
+   "网址": "https://open-meteo.com ；定价/限额 https://open-meteo.com/en/pricing ；文档 https://open-meteo.com/en/docs",
+   "注册": "免费版无需注册、无需 Key",
+   "额度": "免费版仅限非商业用途，600 次/分钟、5,000 次/小时、10,000 次/天、300,000 次/月，无可用性保证；商用需订阅（Standard 100 万次/月）；数据需署名（CC BY 4.0）",
+   "用法": "GET https://api.open-meteo.com/v1/forecast?latitude=22.3&longitude=114.2&hourly=temperature_2m,precipitation ；另有 Marine、Air Quality、Geocoding、Flood 接口",
+   "Agent 适配": "30+ 天气模型、纯 JSON；自带地名转坐标的 Geocoding API，Agent 可直接按城市名查",
+   "场景": "判断港口/航线天气是否影响出货；给跨境卖家做发货延误预警",
+   "匹配度": "★★★☆☆（正式商用请改用付费版）"
+  },
+  "category": "物流天气",
+  "url": "https://open-meteo.com",
+  "direction": "物流",
+  "slug": "open-meteo"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Cohere",
+  "tagline": "AI 模型｜Rerank 提升 RAG",
+  "fields": {
+   "网址": "https://cohere.com ；限额 https://docs.cohere.com/docs/rate-limits",
+   "注册": "dashboard.cohere.com 注册 → API keys 页面创建 Trial（评估）Key",
+   "额度": "Trial Key 免费但有限：每月 1,000 次 API 调用；Chat 各模型 20 次/分钟；Embed 2,000 条输入/分钟；Rerank 10 次/分钟；语音转写 5 次/分钟；生产用需付费 Key",
+   "用法": "Python/JS SDK 或 POST https://api.cohere.com/v2/rerank 、/v2/embed 、/v2/chat",
+   "Agent 适配": "Chat 支持工具调用与 RAG 引用；Rerank 可对搜索结果二次排序；Embed 做语义检索；有 LangChain、LlamaIndex 集成，也可经 OpenRouter 调用",
+   "场景": "Brave/Exa 搜出一堆结果后用 Rerank 选最相关 5 条；给客户问答库做向量检索",
+   "匹配度": "★★★★☆（1000 次/月适合评估和小项目）"
+  },
+  "category": "AI模型",
+  "url": "https://cohere.com",
+  "direction": "一人公司",
+  "slug": "cohere"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Unsplash API",
+  "tagline": "自媒体素材｜高质量免版权图库",
+  "fields": {
+   "网址": "https://unsplash.com/developers ；文档 https://unsplash.com/documentation",
+   "注册": "unsplash.com 注册开发者账号 → Your apps → New Application 拿 Access Key",
+   "额度": "新应用为 Demo 模式，50 次请求/小时；申请 Production 获批后 1,000 次/小时；只统计 api.unsplash.com 的 JSON 请求，图片文件请求不计；使用须按规范标注摄影师和 Unsplash",
+   "用法": "GET https://api.unsplash.com/search/photos?query=logistics ，头部 Authorization: Client-ID {AccessKey}",
+   "Agent 适配": "官方 SDK，响应带动态裁剪参数（宽高、格式）和 BlurHash；返回摄影师信息便于自动署名",
+   "场景": "Agent 写完文章/公众号自动配图；给产品页和社媒帖找背景图",
+   "匹配度": "★★★☆☆（与 Pexels 互补）"
+  },
+  "category": "自媒体素材",
+  "url": "https://unsplash.com/developers",
+  "direction": "自媒体",
+  "slug": "unsplash-api"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "AssemblyAI",
+  "tagline": "自媒体转写｜语音转文字，附带说话人分离",
+  "fields": {
+   "网址": "https://www.assemblyai.com ；定价 https://www.assemblyai.com/pricing",
+   "注册": "assemblyai.com 注册即可开始转写，无需信用卡 → Dashboard 拿 API Key",
+   "额度": "免费层含最多 185 小时预录音频转写 + 最多 333 小时实时转写；之后按量：Universal-2 $0.15/小时、Universal-3.5 Pro $0.21/小时；说话人分离 +$0.02/小时；免费计划实时连接每分钟最多新开 5 个",
+   "用法": "Python/JS SDK，或上传音频 URL 到 POST https://api.assemblyai.com/v2/transcript 后轮询结果",
+   "Agent 适配": "99 种语言（Universal-2）、说话人分离、关键词提示；同平台还有文字转语音（$15/百万字符）",
+   "场景": "把客户会议、播客和视频自动转成文字稿，再让 Agent 提炼成文章、短视频脚本",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体转写",
+  "url": "https://www.assemblyai.com",
+  "direction": "自媒体",
+  "slug": "assemblyai"
+ },
+ {
+  "issue": "003",
+  "date": "2026-11-09",
+  "name": "Supabase",
+  "tagline": "一人公司后端｜Agent 直连的后端",
+  "fields": {
+   "网址": "https://supabase.com ；定价 https://supabase.com/pricing ；MCP 文档 https://supabase.com/docs/guides/getting-started/mcp",
+   "注册": "supabase.com 用 GitHub 登录 → New project（免费计划可建 2 个项目）",
+   "额度": "Free 计划 $0/月：API 请求不限、5 万月活用户、500 MB 数据库、1 GB 文件存储、5 GB 出口流量、Realtime 200 并发连接 / 每月 200 万条消息；项目闲置 1 周会被暂停；无自动备份",
+   "用法": "supabase-js / Python 客户端，或 REST 自动生成 https://{project}.supabase.co/rest/v1/{table}",
+   "Agent 适配": "官方 MCP 服务器（文档 2026-11-06 更新），可让 AI 查询和管理你的项目；支持向量/Embeddings；官方提示连接有安全风险，建议只连开发项目",
+   "场景": "给 Agent 做 CRM、订单库、知识库向量检索和会员登录，不用自己搭服务器",
+   "匹配度": "★★★★★"
+  },
+  "category": "一人公司后端",
+  "url": "https://supabase.com",
+  "direction": "一人公司",
+  "slug": "supabase"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Deepgram",
+  "tagline": "语音识别｜音频秒变文字",
+  "fields": {
+   "网址": "https://deepgram.com ；定价 https://deepgram.com/pricing ；文档 https://developers.deepgram.com",
+   "注册": "deepgram.com 邮箱/Google/GitHub 注册，无需信用卡 → Console 创建 API Key",
+   "额度": "定价页显示 Free 为 $200 额度，之后按量付费；无最低消费、无过期、无需信用卡",
+   "用法": "POST https://api.deepgram.com/v1/listen 上传音频或 URL，选 nova-3 模型；另有 TTS 与 Voice Agent API",
+   "Agent 适配": "官方 MCP 服务器、CLI（28 个 API 命令）与 Agent Skills",
+   "场景": "客户电话/会议录音转写、视频口播出字幕、给 Agent 做语音客服",
+   "匹配度": "★★★★☆"
+  },
+  "category": "语音识别",
+  "url": "https://deepgram.com",
+  "direction": "一人公司",
+  "slug": "deepgram"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Geoapify",
+  "tagline": "地理位置｜地址、路线、地点一站式",
+  "fields": {
+   "网址": "https://www.geoapify.com ；定价 https://www.geoapify.com/pricing",
+   "注册": "myprojects.geoapify.com 注册，Free 无需信用卡 → 创建项目获取 API Key",
+   "额度": "Free 每天 3,000 credits，最高 5 请求/秒；官方 FAQ 注明可用于商业项目，需在额度内",
+   "用法": "GET https://api.geoapify.com/v1/geocode/search?text=地址&apiKey=KEY ；另有路线、等时圈、地点搜索",
+   "Agent 适配": "纯 REST + JSON，易封装为 Agent 工具",
+   "场景": "清洗客户地址、估算仓库到客户的路线、查找港口/仓库周边服务商",
+   "匹配度": "★★★★☆"
+  },
+  "category": "地理位置",
+  "url": "https://www.geoapify.com",
+  "direction": "一人公司",
+  "slug": "geoapify"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Serper",
+  "tagline": "搜索｜Google 结果 API",
+  "fields": {
+   "网址": "https://serper.dev",
+   "注册": "serper.dev 注册，无需信用卡 → Dashboard 获取 API Key",
+   "额度": "首页写明注册送 2,500 次免费查询；付费 Starter $50 / 5 万 credits",
+   "用法": "POST https://google.serper.dev/search ，Header X-API-KEY，Body {\"q\":\"关键词\"}；支持图片、新闻、地图、购物、学术",
+   "Agent 适配": "LangChain 等框架常见内置工具，返回结构化 JSON",
+   "场景": "Agent 查竞品价格、海外买家、Google 购物与新闻",
+   "匹配度": "★★★★☆"
+  },
+  "category": "搜索",
+  "url": "https://serper.dev",
+  "direction": "一人公司",
+  "slug": "serper"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Pixabay API",
+  "tagline": "自媒体素材｜免版权图片视频",
+  "fields": {
+   "网址": "https://pixabay.com/api/docs/",
+   "注册": "pixabay.com 注册账号后在 API 文档页获取 Key",
+   "额度": "默认每个 Key 每 60 秒 100 次请求；要求缓存结果 24 小时并标注来源",
+   "用法": "GET https://pixabay.com/api/?key=KEY&q=关键词 ，返回图片/视频 JSON（另有 /api/videos/）",
+   "Agent 适配": "简单 REST，可作为配图工具",
+   "场景": "为文章、短视频、产品页自动找免版权配图",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "自媒体素材",
+  "url": "https://pixabay.com/api/docs/",
+  "direction": "自媒体",
+  "slug": "pixabay-api"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Cal.com",
+  "tagline": "自动排期｜Agent 约客户",
+  "fields": {
+   "网址": "https://cal.com ；定价 https://cal.com/pricing ；API https://cal.com/docs/api-reference/v2/introduction",
+   "注册": "cal.com 注册，个人 Free 计划永久免费 → 设置中创建 API Key",
+   "额度": "Free 为 1 用户、无限链接与日历、邮件和短信通知；定价页写明免费无使用限制",
+   "用法": "API v2 提供 Bookings、Slots、Schedules 等接口，可查空档并创建预约",
+   "Agent 适配": "官方 MCP 服务器与 Agent 快速入门文档",
+   "场景": "Agent 回复客户询盘时直接发预约链接、自动约视频会议",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自动排期",
+  "url": "https://cal.com",
+  "direction": "一人公司",
+  "slug": "cal-com"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "GNews",
+  "tagline": "新闻｜8 万+ 来源的新闻搜索",
+  "fields": {
+   "网址": "https://gnews.io ；定价 https://gnews.io/pricing",
+   "注册": "gnews.io 注册，无需信用卡 → Dashboard 获取 apikey",
+   "额度": "Free 每天 100 请求、每次最多 10 篇、12 小时延迟、近 30 天历史、正文截断 250 字符；仅限非商业使用",
+   "用法": "GET https://gnews.io/api/v4/search?q=AI&lang=en&apikey=KEY",
+   "Agent 适配": "JSON 响应简洁，适合做新闻监控工具（商用需付费计划）",
+   "场景": "监控行业新闻、关税政策、选题灵感",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "新闻",
+  "url": "https://gnews.io",
+  "direction": "一人公司",
+  "slug": "gnews"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Brevo",
+  "tagline": "邮件营销｜事务与营销邮件",
+  "fields": {
+   "网址": "https://www.brevo.com ；定价 https://www.brevo.com/pricing/",
+   "注册": "brevo.com 注册，账号需审核通过后才能发送 → SMTP & API 页创建 Key",
+   "额度": "官方定价页 FAQ 写明账号通过审核后可每天发送最多 300 封邮件",
+   "用法": "POST https://api.brevo.com/v3/smtp/email ，Header api-key",
+   "Agent 适配": "定价页导航列有 Email MCP 产品",
+   "场景": "外贸开发信序列、订单确认邮件、Newsletter",
+   "匹配度": "★★★★☆"
+  },
+  "category": "邮件营销",
+  "url": "https://www.brevo.com",
+  "direction": "一人公司",
+  "slug": "brevo"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "IPinfo Lite",
+  "tagline": "IP 定位｜免费无限 IP 查询",
+  "fields": {
+   "网址": "https://ipinfo.io/lite ；定价 https://ipinfo.io/pricing",
+   "注册": "ipinfo.io 邮箱注册，无需信用卡 → 获取 Token",
+   "额度": "官方页面写明国家级定位与 ASN，无月费、无需信用卡、API 请求无限制",
+   "用法": "GET https://ipinfo.io/lite/8.8.8.8?token=TOKEN",
+   "Agent 适配": "轻量 REST，适合作为 Agent 的辅助判断工具",
+   "场景": "识别网站访客来自哪个国家做外贸线索评分、风控订单",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "IP定位",
+  "url": "https://ipinfo.io/lite",
+  "direction": "一人公司",
+  "slug": "ipinfo-lite"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "Alpha Vantage",
+  "tagline": "金融数据｜股票外汇加密",
+  "fields": {
+   "网址": "https://www.alphavantage.co ；支持页 https://www.alphavantage.co/support/",
+   "注册": "alphavantage.co/support 页面免费领取 API Key",
+   "额度": "官方支持页写明免费每天 25 次请求；已验证开源/教育项目可无限",
+   "用法": "GET https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=USD&to_symbol=CNY&apikey=KEY",
+   "Agent 适配": "站点提供 MCP 相关支持，细节以官方文档为准",
+   "场景": "汇率与大宗商品趋势监控、跨境定价参考",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "金融数据",
+  "url": "https://www.alphavantage.co",
+  "direction": "一人公司",
+  "slug": "alpha-vantage"
+ },
+ {
+  "issue": "004",
+  "date": "2026-11-10",
+  "name": "ntfy",
+  "tagline": "推送通知｜一行 curl 推手机",
+  "fields": {
+   "网址": "https://ntfy.sh ；文档 https://docs.ntfy.sh/publish/",
+   "注册": "无需注册，自选 topic 名在 App 订阅即可",
+   "额度": "官方文档默认配置为每访客 60 次请求突发、每 5 秒补充 1 次；ntfy.sh 公共服务实际限额以官网为准",
+   "用法": "curl -d \"订单已发货\" ntfy.sh/你的topic",
+   "Agent 适配": "HTTP 即可调用，零配置",
+   "场景": "Agent 任务完成、异常、新询盘即时推送到手机",
+   "匹配度": "★★★★☆"
+  },
+  "category": "推送通知",
+  "url": "https://ntfy.sh",
+  "direction": "一人公司",
+  "slug": "ntfy"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "ExchangeRate-API",
+  "tagline": "外贸汇率｜165 种货币报价",
+  "fields": {
+   "网址": "https://www.exchangerate-api.com ；文档 https://www.exchangerate-api.com/docs/overview",
+   "注册": "官网 Get Free Key，邮箱注册并确认邮件，Free 无需信用卡",
+   "额度": "定价页显示 Free 每月 1.5K 次请求，每天更新一次，含历史数据",
+   "用法": "HTTPS GET 请求即可，返回 JSON，无需 SDK",
+   "Agent 适配": "纯 REST + JSON，Agent 以一次 HTTP 工具调用即可换算报价",
+   "场景": "外贸报价单自动换算多币种、跨境店铺本地化价格",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸汇率",
+  "url": "https://www.exchangerate-api.com",
+  "direction": "外贸",
+  "slug": "exchangerate-api"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "Open Exchange Rates",
+  "tagline": "外贸汇率｜小时级更新汇率",
+  "fields": {
+   "网址": "https://openexchangerates.org",
+   "注册": "官网 signup 注册免费计划获取 App ID",
+   "额度": "页面显示 Free 计划每小时更新（基础货币为 USD），每月最多 1,000 次请求",
+   "用法": "GET /api/latest.json?app_id=你的ID，返回 200+ 货币汇率",
+   "Agent 适配": "REST + JSON，可与 ExchangeRate-API 互为备份",
+   "场景": "外贸成本核算、汇率波动提醒、对账",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "外贸汇率",
+  "url": "https://openexchangerates.org",
+  "direction": "外贸",
+  "slug": "open-exchange-rates"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "SerpApi",
+  "tagline": "搜索抓取｜结构化谷歌搜索结果",
+  "fields": {
+   "网址": "https://serpapi.com ；定价 https://serpapi.com/pricing",
+   "注册": "serpapi.com 邮箱注册并验证手机号，在 Dashboard 复制 API Key",
+   "额度": "定价页显示 Free 每月 250 次搜索，吞吐每小时 50 次",
+   "用法": "GET https://serpapi.com/search?engine=google&q=关键词&api_key=KEY",
+   "Agent 适配": "官方提供多语言 SDK，并可被 Agent 作为搜索工具调用",
+   "场景": "外贸找买家与竞品、自媒体选题热度、价格监控",
+   "匹配度": "★★★★☆"
+  },
+  "category": "搜索抓取",
+  "url": "https://serpapi.com",
+  "direction": "一人公司",
+  "slug": "serpapi"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "ScrapingBee",
+  "tagline": "网页抓取｜自动处理代理与渲染",
+  "fields": {
+   "网址": "https://www.scrapingbee.com ；定价 https://www.scrapingbee.com/pricing/",
+   "注册": "官网邮箱注册，无需信用卡",
+   "额度": "定价页显示注册即送 1,000 个免费 API credits（一次性试用额度）",
+   "用法": "GET 请求带 api_key 与目标 url，可选 JavaScript 渲染、代理",
+   "Agent 适配": "REST 即用，适合作为 Agent 的「读网页」工具",
+   "场景": "抓取供应商页面、竞品商品信息、行业资讯",
+   "匹配度": "★★★★☆"
+  },
+  "category": "网页抓取",
+  "url": "https://www.scrapingbee.com",
+  "direction": "一人公司",
+  "slug": "scrapingbee"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "Linkup",
+  "tagline": "AI 搜索｜Agent 专用搜索",
+  "fields": {
+   "网址": "https://www.linkup.so ；定价 https://www.linkup.so/pricing",
+   "注册": "官网 Get started 注册获取 API Key",
+   "额度": "定价页写明可免费运行 4,000 次查询，之后按量付费；具体计费以官方控制台为准",
+   "用法": "REST 调用 search / fetch 接口，返回带来源的答案或原文",
+   "Agent 适配": "定位为 AI Agent 的生产级网页搜索，带 API 文档与 SDK",
+   "场景": "Agent 实时查证、行业调研、带引用的内容写作",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI搜索",
+  "url": "https://www.linkup.so",
+  "direction": "一人公司",
+  "slug": "linkup"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "GitHub REST API",
+  "tagline": "开发者生态｜代码仓库全自动",
+  "fields": {
+   "网址": "https://docs.github.com/en/rest",
+   "注册": "github.com 注册账号 → Settings 创建 Personal Access Token",
+   "额度": "官方文档：未认证请求每小时 60 次；认证用户每小时 5,000 次",
+   "用法": "GET https://api.github.com/repos/{owner}/{repo}，Header 带 Bearer Token",
+   "Agent 适配": "官方 SDK 与 CLI，Agent 可自动管理仓库、读 Issue、发 Release",
+   "场景": "一人公司的代码与文档自动化、监控开源项目更新、发现新 API",
+   "匹配度": "★★★★☆"
+  },
+  "category": "开发者生态",
+  "url": "https://docs.github.com/en/rest",
+  "direction": "一人公司",
+  "slug": "github-rest-api"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "Upstash",
+  "tagline": "Agent 记忆｜Serverless Redis 与队列",
+  "fields": {
+   "网址": "https://upstash.com ；定价 https://upstash.com/pricing",
+   "注册": "console.upstash.com 邮箱/GitHub/Google 登录，创建数据库",
+   "额度": "定价页显示 Free 为 250 MB 数据、每月 10 GB 带宽、每月 50 万次命令",
+   "用法": "REST 或 Redis 协议读写；另有 QStash 消息队列、Vector 向量库",
+   "Agent 适配": "HTTP REST 接口，适合 Agent 存会话记忆、缓存与定时任务",
+   "场景": "Agent 记忆、限流缓存、定时回调、去重",
+   "匹配度": "★★★★☆"
+  },
+  "category": "Agent记忆",
+  "url": "https://upstash.com",
+  "direction": "一人公司",
+  "slug": "upstash"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "Neon",
+  "tagline": "一人公司后端｜Serverless Postgres 数据库",
+  "fields": {
+   "网址": "https://neon.com ；定价 https://neon.com/pricing",
+   "注册": "neon.com 邮箱/GitHub 注册，Free 无需信用卡",
+   "额度": "定价页显示 Free 永久：100 个项目、每项目每月 100 CU 小时、每项目 1 GB 存储",
+   "用法": "创建项目获取连接串，用任意 Postgres 客户端或 HTTP 驱动连接",
+   "Agent 适配": "标准 Postgres，Agent 可直接写 SQL，可配合 MCP 管理数据库",
+   "场景": "客户线索库、订单与物流记录库、Agent 长期数据存储",
+   "匹配度": "★★★★☆"
+  },
+  "category": "一人公司后端",
+  "url": "https://neon.com",
+  "direction": "一人公司",
+  "slug": "neon"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "Scrapingdog",
+  "tagline": "网页抓取｜低门槛抓取与搜索接口",
+  "fields": {
+   "网址": "https://www.scrapingdog.com ；定价 https://www.scrapingdog.com/pricing",
+   "注册": "官网邮箱注册，无需信用卡",
+   "额度": "定价页显示 Free 永久 100 次请求 credits，1 并发，可访问所有 API",
+   "用法": "GET 请求带 api_key 与 url，另提供谷歌搜索等专用接口",
+   "Agent 适配": "REST 调用，失败请求不扣费，适合 Agent 做兜底抓取",
+   "场景": "电商价格与评论抓取、外贸获客名单、社媒数据采集",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "网页抓取",
+  "url": "https://www.scrapingdog.com",
+  "direction": "一人公司",
+  "slug": "scrapingdog"
+ },
+ {
+  "issue": "005",
+  "date": "2026-11-11",
+  "name": "Ayrshare",
+  "tagline": "社媒发布｜一键发 14 个平台",
+  "fields": {
+   "网址": "https://www.ayrshare.com ；定价 https://www.ayrshare.com/pricing/",
+   "注册": "官网注册，开始 28 天免费试用，试用为 Launch 计划权限",
+   "额度": "定价页显示 28 天免费试用；试用后保留 Launch 或切换付费计划，具体额度以官方控制台为准",
+   "用法": "POST /api/post 带文案、图片与平台列表，一次发布多个平台",
+   "Agent 适配": "REST API，Agent 可生成文案后直接排期发布",
+   "场景": "自媒体多平台同步发布、定时发帖、评论管理",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "社媒发布",
+  "url": "https://www.ayrshare.com",
+  "direction": "自媒体",
+  "slug": "ayrshare"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Postmark",
+  "tagline": "邮件外联｜事务邮件高送达",
+  "fields": {
+   "网址": "https://postmarkapp.com",
+   "注册": "官网 Start free trial 注册，无需信用卡；新账号默认 Free 开发者计划",
+   "额度": "定价页：Free $0/月，每月 100 封，不过期、不允许超额；付费 Basic $15/月起 1 万封",
+   "用法": "REST API 或 SMTP 发信，官方有 SDK，沙盒模式可测试",
+   "Agent 适配": "REST + JSON，Agent 一次 HTTP 调用即可发报价/跟进邮件；官方提供 Postmark Skills 教 Agent 发信",
+   "场景": "外贸询盘自动回复、订单确认、物流通知邮件",
+   "匹配度": "★★★★☆"
+  },
+  "category": "邮件外联",
+  "url": "https://postmarkapp.com",
+  "direction": "一人公司",
+  "slug": "postmark"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "SearchApi",
+  "tagline": "搜索｜多引擎实时 SERP",
+  "fields": {
+   "网址": "https://www.searchapi.io",
+   "注册": "官网 Sign up，无需信用卡",
+   "额度": "定价页：注册送 100 次免费请求；付费 Developer $40/月含 1 万次；失败请求不计费",
+   "用法": "GET 请求带 api_key 和 engine 参数，返回结构化 JSON",
+   "Agent 适配": "覆盖 Google、Bing、Amazon、YouTube、TikTok、LinkedIn Jobs 等引擎，Agent 可当万能搜索工具",
+   "场景": "外贸竞品价格监控、选品调研、自媒体热点与关键词研究",
+   "匹配度": "★★★★☆"
+  },
+  "category": "搜索",
+  "url": "https://www.searchapi.io",
+  "direction": "一人公司",
+  "slug": "searchapi"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Pushover",
+  "tagline": "推送通知｜手机即时推送",
+  "fields": {
+   "网址": "https://www.pushover.net",
+   "注册": "官网注册账号，在 iOS/Android 安装 App（30 天免费试用，之后为一次性购买）",
+   "额度": "官网：每位用户每月可免费发送最多 10,000 条消息",
+   "用法": "POST https://api.pushover.net/1/messages.json，带 token、user、message",
+   "Agent 适配": "一条 HTTP 请求即可让 Agent 把结果、告警推到手机",
+   "场景": "Agent 任务完成提醒、订单/货件异常告警、每日汇总推送",
+   "匹配度": "★★★★☆"
+  },
+  "category": "推送通知",
+  "url": "https://www.pushover.net",
+  "direction": "一人公司",
+  "slug": "pushover"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Google Sheets API",
+  "tagline": "一人公司效率｜表格当数据库",
+  "fields": {
+   "网址": "https://developers.google.com/sheets/api",
+   "注册": "在 Google Cloud 控制台建项目并启用 Sheets API，OAuth 或服务账号授权",
+   "额度": "官方限额页：读请求每分钟每项目 300 次、每用户每项目 60 次；写请求同样 300/60",
+   "用法": "REST 或官方各语言客户端，读写单元格、追加行",
+   "Agent 适配": "官方已提供 Sheets MCP server；Agent 可直接读写 CRM、报价表、选题库",
+   "场景": "线索表自动追加、报价单生成、内容排期表同步",
+   "匹配度": "★★★★★"
+  },
+  "category": "一人公司效率",
+  "url": "https://developers.google.com/sheets/api",
+  "direction": "一人公司",
+  "slug": "google-sheets-api"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "ipapi.co",
+  "tagline": "外贸IP定位｜IP 查国家时区币种",
+  "fields": {
+   "网址": "https://ipapi.co",
+   "注册": "免费层直接调用，无需注册",
+   "额度": "定价页：Free 每月 30,000 次、每天最多 1,000 次，仅适合测试/开发，非生产使用，无支持",
+   "用法": "GET https://ipapi.co/{ip}/json/ 返回国家、城市、时区、币种",
+   "Agent 适配": "单次 GET 返回 JSON，Agent 可据访客 IP 自动匹配语言、币种",
+   "场景": "独立站访客国家识别、询盘来源分析、自动选择报价币种",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "外贸IP定位",
+  "url": "https://ipapi.co",
+  "direction": "外贸",
+  "slug": "ipapi-co"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Abstract VAT API",
+  "tagline": "外贸合规｜欧盟 VAT 号验证",
+  "fields": {
+   "网址": "https://www.abstractapi.com/api/vat-validation-rates-api",
+   "注册": "官网 get free api key，无需信用卡",
+   "额度": "定价页：Free $0，100 次请求、每秒 1 次；Standard $99/月",
+   "用法": "GET 请求带 api_key 和 vat_number，返回有效性与税率",
+   "Agent 适配": "REST + JSON，Agent 在开单前自动核验欧洲客户 VAT 号",
+   "场景": "出口欧盟前验证客户资质、自动取目标国税率报价",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸合规",
+  "url": "https://www.abstractapi.com/api/vat-validation-rates-api",
+  "direction": "外贸",
+  "slug": "abstract-vat-api"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Mailtrap",
+  "tagline": "邮件测试与发送｜邮件沙盒加发信",
+  "fields": {
+   "网址": "https://mailtrap.io",
+   "注册": "官网 Start for Free 注册",
+   "额度": "定价页：Free $0/月，最多 4,000 封，每天 150 封，1 个域名，日志保留 3 天",
+   "用法": "API 或 SMTP 发信；沙盒捕获测试邮件，不会误发客户",
+   "Agent 适配": "定价页标注面向 AI Agent；Agent 可先沙盒预演再正式发送",
+   "场景": "外联邮件上线前预演、批量开发信小规模发送",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "邮件测试与发送",
+  "url": "https://mailtrap.io",
+  "direction": "一人公司",
+  "slug": "mailtrap"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Discord API",
+  "tagline": "自媒体社群｜社群机器人与 Webhook",
+  "fields": {
+   "网址": "https://discord.com/developers/docs",
+   "注册": "Developer Portal 创建 Application 获取 Bot Token，或在频道设置创建 Webhook",
+   "额度": "官方限速文档：按路由与全局限速，具体数字以响应头 X-RateLimit 与官方控制台为准",
+   "用法": "Webhook 一次 POST 发消息；Bot 用 discord.js 等 SDK",
+   "Agent 适配": "Agent 可做社群客服、发布提醒、读取反馈",
+   "场景": "粉丝社群自动答疑、内容更新推送、订单通知频道",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "自媒体社群",
+  "url": "https://discord.com/developers/docs",
+  "direction": "自媒体",
+  "slug": "discord-api"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Airtable API",
+  "tagline": "一人公司效率｜可视化数据库",
+  "fields": {
+   "网址": "https://airtable.com/developers/web/api/introduction",
+   "注册": "官网 Sign up for free，创建 Base 后生成个人访问令牌",
+   "额度": "官方定价页确认有 Free 免费计划，具体记录数与调用额度以官方控制台为准",
+   "用法": "REST API 增删改查记录，带 Bearer 令牌",
+   "Agent 适配": "REST + JSON，Agent 可把 Airtable 当 CRM、内容日历",
+   "场景": "客户跟进看板、自媒体选题库、供应商管理",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "一人公司效率",
+  "url": "https://airtable.com/developers/web/api/introduction",
+  "direction": "一人公司",
+  "slug": "airtable-api"
+ },
+ {
+  "issue": "006",
+  "date": "2026-11-12",
+  "name": "Together AI",
+  "tagline": "AI模型｜开源模型推理",
+  "fields": {
+   "网址": "https://www.together.ai",
+   "注册": "官网 Sign up 注册获取 API Key",
+   "额度": "定价页：Ternary Bonsai 27B 标注 Free；其余模型按 token 计费，试用额度以官方控制台为准",
+   "用法": "OpenAI 兼容接口，改 base_url 即可用 OpenAI SDK",
+   "Agent 适配": "OpenAI 兼容，Agent 框架零改动接入，可切换多种开源模型",
+   "场景": "低成本批量翻译、客服草稿、内容改写",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "AI模型",
+  "url": "https://www.together.ai",
+  "direction": "一人公司",
+  "slug": "together-ai"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "Pinecone",
+  "tagline": "向量数据库｜Agent 长期知识库",
+  "fields": {
+   "网址": "https://www.pinecone.io",
+   "注册": "app.pinecone.io 注册，Starter 免费计划",
+   "额度": "定价页：Starter 免费，最多 5 个索引、2GB 存储、每月 200 万写入单元、100 万读取单元；内置嵌入模型每月 500 万 token；仅 us-east-1",
+   "用法": "控制台建索引拿 API Key，用 Python / JS SDK upsert 与 query",
+   "Agent 适配": "有官方 SDK、内置嵌入与重排（Inference）和 Assistant，可直接做 RAG 知识库",
+   "场景": "外贸产品资料库、客服问答、自媒体选题素材检索",
+   "匹配度": "★★★★☆"
+  },
+  "category": "向量数据库",
+  "url": "https://www.pinecone.io",
+  "direction": "一人公司",
+  "slug": "pinecone"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "Qdrant Cloud",
+  "tagline": "向量数据库｜永久免费 1GB 集群",
+  "fields": {
+   "网址": "https://qdrant.tech",
+   "注册": "cloud.qdrant.io 注册，Free Tier 无需升级即可使用",
+   "额度": "定价页：Free Tier 永久免费，单节点 0.5 vCPU / 1GB RAM / 4GB 磁盘，含部分模型的免费云端推理",
+   "用法": "控制台建集群拿 URL 与 API Key，REST / gRPC 或官方 SDK；也可开源自部署",
+   "Agent 适配": "开源，支持混合检索，主流 Agent 框架均有集成",
+   "场景": "客户资料语义检索、竞品文案库、物流 FAQ 机器人",
+   "匹配度": "★★★★☆"
+  },
+  "category": "向量数据库",
+  "url": "https://qdrant.tech",
+  "direction": "一人公司",
+  "slug": "qdrant-cloud"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "Mem0",
+  "tagline": "Agent 记忆层｜给 Agent 长期记忆",
+  "fields": {
+   "网址": "https://mem0.ai",
+   "注册": "官网 Get Started 注册，免费计划自带你的 LLM Key",
+   "额度": "定价页：Free 不限终端用户；前 30 天每月 1 万次添加、1000 次检索；用自己的 LLM Key 为每月 5 万次添加、1 万次检索；超出按量计费且可设月度上限",
+   "用法": "SDK 的 add / search 两个调用，官方提供 MCP 集成",
+   "Agent 适配": "开源，有 MCP，让 Agent 记住客户偏好与历史对话",
+   "场景": "外贸客户跟进记忆、个人 AI 助理、自媒体风格偏好记忆",
+   "匹配度": "★★★★★"
+  },
+  "category": "Agent记忆",
+  "url": "https://mem0.ai",
+  "direction": "一人公司",
+  "slug": "mem0"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "E2B",
+  "tagline": "代码沙盒｜Agent 的云端电脑",
+  "fields": {
+   "网址": "https://e2b.dev",
+   "注册": "console.e2b.dev 注册，免费 Hobby，无需信用卡",
+   "额度": "定价页：Hobby 免费，含一次性 100 美元用量额度；单次会话最长 1 小时；10 个并发沙盒；Pro 为 150 美元/月",
+   "用法": "pip install e2b 或 npm i e2b，几行代码启动沙盒并运行代码",
+   "Agent 适配": "专为 AI Agent 设计，安全执行模型生成的代码、数据分析与文件处理",
+   "场景": "自动处理报价 Excel、批量转换物流单据、数据清洗",
+   "匹配度": "★★★★☆"
+  },
+  "category": "代码沙盒",
+  "url": "https://e2b.dev",
+  "direction": "一人公司",
+  "slug": "e2b"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "Browserbase",
+  "tagline": "云浏览器｜让 Agent 会上网操作",
+  "fields": {
+   "网址": "https://www.browserbase.com",
+   "注册": "官网 Sign up，Free 计划",
+   "额度": "定价页：Free 每月 0 美元，3 个并发浏览器、1 浏览器小时、1000 次 Search、1000 次 Fetch，单会话 15 分钟",
+   "用法": "Playwright / Puppeteer / Selenium 连接云端浏览器，或用开源 Stagehand 自然语言操作",
+   "Agent 适配": "有 MCP 与 Stagehand SDK，处理无 API 的网站登录、表单与抓取",
+   "场景": "查询船公司网站、填写海关或平台表单、竞品价格抓取",
+   "匹配度": "★★★★☆"
+  },
+  "category": "云浏览器",
+  "url": "https://www.browserbase.com",
+  "direction": "一人公司",
+  "slug": "browserbase"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "LangSmith",
+  "tagline": "Agent 观测｜追踪调试 Agent",
+  "fields": {
+   "网址": "https://www.langchain.com/langsmith",
+   "注册": "官网注册，Developer 计划",
+   "额度": "定价页：Developer 每席位每月 0 美元，含 5000 个基础 trace/月，之后按量付费；1 个席位，社区支持",
+   "用法": "设置环境变量后自动记录调用链，支持评估与提示词管理",
+   "Agent 适配": "兼容 LangChain 与其他框架，查看每步工具调用、成本与延迟",
+   "场景": "排查外贸 Agent 为什么回复错、优化成本、对比提示词",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "Agent观测",
+  "url": "https://www.langchain.com/langsmith",
+  "direction": "一人公司",
+  "slug": "langsmith"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "Cloudinary",
+  "tagline": "图片视频处理｜自媒体素材自动化",
+  "fields": {
+   "网址": "https://cloudinary.com",
+   "注册": "cloudinary.com/users/register_free 注册，无需信用卡",
+   "额度": "定价页：Free 永久免费，每月 25 credits（1 credit = 1000 次转换 或 1GB 存储 或 1GB 图片带宽）；3 用户；含 MCP 服务器访问",
+   "用法": "上传 API 后用 URL 参数实时裁剪、压缩、转格式",
+   "Agent 适配": "官方提供 MCP Server，Agent 可直接上传与变换素材",
+   "场景": "自动生成多平台封面尺寸、产品图批量压缩、视频转码",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体素材处理",
+  "url": "https://cloudinary.com",
+  "direction": "自媒体",
+  "slug": "cloudinary"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "Shippo",
+  "tagline": "物流运费｜多承运商比价与面单",
+  "fields": {
+   "网址": "https://www.shippo.com",
+   "注册": "API 门户注册，API Starter 无月费",
+   "额度": "API 定价页：每月前 30 张面单免费，之后 7 美分/张；追踪 2 美分/次、比价 1 美分/次生成（需另付）；官方文档称有托管 MCP Server",
+   "用法": "REST API 或 SDK 创建 shipment、取运费、买面单、追踪",
+   "Agent 适配": "有 MCP Server，Agent 可比较 40+ 承运商运费",
+   "场景": "跨境小包比价、自动生成面单、给客户推送追踪",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "物流运费",
+  "url": "https://www.shippo.com",
+  "direction": "物流",
+  "slug": "shippo"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "WeatherAPI.com",
+  "tagline": "天气数据｜免费 10 万次调用",
+  "fields": {
+   "网址": "https://www.weatherapi.com",
+   "注册": "官网 Get free API key",
+   "额度": "定价页：Free 永久免费，每月 10 万次调用，含 3 天预报与前 1 天历史、实时、搜索、IP 定位；官方称免费版可用于商业应用；含 MCP 服务器",
+   "用法": "GET 请求带 key 与城市参数，返回 JSON",
+   "Agent 适配": "官方 MCP Server，Agent 直接查天气与空气质量",
+   "场景": "港口天气延误预警、物流排期、户外内容选题",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "物流天气",
+  "url": "https://www.weatherapi.com",
+  "direction": "物流",
+  "slug": "weatherapi-com"
+ },
+ {
+  "issue": "007",
+  "date": "2026-11-13",
+  "name": "OpenWeather",
+  "tagline": "天气数据｜每月 100 万次免费",
+  "fields": {
+   "网址": "https://openweathermap.org/api",
+   "注册": "官网注册并订阅 Free 计划获取 Key",
+   "额度": "定价页：Free 每分钟 60 次、每月 100 万次，含当前天气与 5 天 3 小时预报；One Call 每天前 1000 次免费，超出 0.0015 美元/次",
+   "用法": "GET 请求带 appid 与经纬度或城市名",
+   "Agent 适配": "站点提供 llms.txt 与 Agent 入口，REST JSON 易于调用",
+   "场景": "运输路线天气风险、出行与活动内容、跨国交付排期",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "物流天气",
+  "url": "https://openweathermap.org/api",
+  "direction": "物流",
+  "slug": "openweather"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Slack API",
+  "tagline": "一人公司协作｜Agent 的通知中枢",
+  "fields": {
+   "网址": "https://docs.slack.dev",
+   "注册": "创建免费 Slack 工作区，在 api.slack.com/apps 新建 App 拿 Token",
+   "额度": "官方限流页：发消息约每频道每秒 1 条；Web API 按方法分 Tier 1–4（每分钟 1+ / 20+ / 50+ / 100+ 次）；Events API 每小时 3 万次投递",
+   "用法": "用 Bolt SDK 或 chat.postMessage / Incoming Webhook 发消息，Events API 收指令",
+   "Agent 适配": "官方文档含 Slack MCP Server 与 Agent 接入页，可直接接 Cursor、Claude 等",
+   "场景": "订单与物流异常告警、内容日报、让 Agent 在频道里接任务",
+   "匹配度": "★★★★☆"
+  },
+  "category": "一人公司协作",
+  "url": "https://docs.slack.dev",
+  "direction": "一人公司",
+  "slug": "slack-api"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Make",
+  "tagline": "自动化平台｜可视化连 1000+ 应用",
+  "fields": {
+   "网址": "https://www.make.com",
+   "注册": "make.com/register 免费注册",
+   "额度": "定价页 FAQ：Free 计划每月 1000 credits，含 1 个数据存储（1MB）；多数动作消耗 1 credit",
+   "用法": "拖拽搭建 Scenario，用 Webhook 触发，或调用其 REST API",
+   "Agent 适配": "页面提供官方 MCP server 与 AI agents 功能，可让外部 Agent 调用场景",
+   "场景": "询盘自动入表、新单触发物流下单、内容多平台分发",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自动化平台",
+  "url": "https://www.make.com",
+  "direction": "一人公司",
+  "slug": "make"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Zapier",
+  "tagline": "自动化平台｜海量应用一键打通",
+  "fields": {
+   "网址": "https://zapier.com",
+   "注册": "zapier.com 免费注册",
+   "额度": "定价页：Free forever $0，含 Zaps、Tables、Forms，每月 100 tasks，两步 Zap",
+   "用法": "在网页建 Zap，或用 Webhook / Zapier 的 Agent 与 Copilot",
+   "Agent 适配": "提供 Agents 与 Chatbots 产品，可把应用动作交给 AI 执行",
+   "场景": "表单线索进 CRM、邮件摘要推送、社媒发布提醒",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "自动化平台",
+  "url": "https://zapier.com",
+  "direction": "一人公司",
+  "slug": "zapier"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Google Cloud Translation",
+  "tagline": "外贸翻译｜多语种批量翻译",
+  "fields": {
+   "网址": "https://cloud.google.com/translate",
+   "注册": "Google Cloud 控制台启用 Translation API，需开通结算账号",
+   "额度": "定价页：每月前 500,000 字符免费（以 10 美元月度抵扣体现），超出按 $20/百万字符起",
+   "用法": "REST / 客户端库调用 translateText，支持批量与语言检测",
+   "Agent 适配": "有多语言官方 SDK，适合做 Agent 的翻译工具函数",
+   "场景": "产品页多语言上架、询盘邮件互译、跨境客服",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸翻译",
+  "url": "https://cloud.google.com/translate",
+  "direction": "外贸",
+  "slug": "google-cloud-translation"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "NewsAPI",
+  "tagline": "新闻数据｜行业热点抓取",
+  "fields": {
+   "网址": "https://newsapi.org",
+   "注册": "newsapi.org 注册获取 API Key",
+   "额度": "定价页：Developer 免费，每天 100 次请求，文章延迟 24 小时，可搜最近一个月，仅限开发用途",
+   "用法": "GET /v2/everything 或 top-headlines，带 apiKey 参数",
+   "Agent 适配": "纯 REST + JSON，易包装成 Agent 搜索工具",
+   "场景": "自媒体选题、外贸行业动态、竞品舆情",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "新闻数据",
+  "url": "https://newsapi.org",
+  "direction": "一人公司",
+  "slug": "newsapi"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Vercel AI Gateway",
+  "tagline": "模型网关｜一个 Key 调多模型",
+  "fields": {
+   "网址": "https://vercel.com/ai-gateway",
+   "注册": "注册 Vercel 账号，在 AI Gateway 创建 Key",
+   "额度": "定价页：免费层每月含 $5 额度，限 Free Tier 可用模型；付费层零加价",
+   "用法": "用 AI SDK 或 OpenAI 兼容端点切换不同厂商模型",
+   "Agent 适配": "统一接口、支持自带 Key、可做用量报表，方便 Agent 做模型回退",
+   "场景": "多模型降本、Agent 容灾切换、成本监控",
+   "匹配度": "★★★★☆"
+  },
+  "category": "模型网关",
+  "url": "https://vercel.com/ai-gateway",
+  "direction": "一人公司",
+  "slug": "vercel-ai-gateway"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Google Maps Platform",
+  "tagline": "地图地理｜地址与路线",
+  "fields": {
+   "网址": "https://developers.google.com/maps",
+   "注册": "Google Cloud 控制台启用 Maps API，需开通结算账号",
+   "额度": "定价页：按事件计费，各 SKU 有月度免费上限，例如 Dynamic Maps 每月 10,000 次免费；其余以官方控制台为准",
+   "用法": "启用所需 API，生成 Key，调用 Geocoding / Routes / Places",
+   "Agent 适配": "官方文档含 Agent skills 与面向 AI 的资源页",
+   "场景": "客户地址校验、仓库与配送距离、物流时效估算",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "地图地理",
+  "url": "https://developers.google.com/maps",
+  "direction": "一人公司",
+  "slug": "google-maps-platform"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Mapbox",
+  "tagline": "地图地理｜带 AI 工具的地理服务",
+  "fields": {
+   "网址": "https://www.mapbox.com",
+   "注册": "mapbox.com 免费注册拿 Token",
+   "额度": "定价页称各产品有免费档（Navigation SDK 每月 10 个活跃用户免费）；API 具体数字以官方控制台为准",
+   "用法": "用 Geocoding、Directions、Matrix API 的 REST 调用",
+   "Agent 适配": "定价页导航列有 Tools for agents（把位置能力带进 AI 工具）",
+   "场景": "多点配送时间矩阵、地址解析、物流路线对比",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "地图地理",
+  "url": "https://www.mapbox.com",
+  "direction": "一人公司",
+  "slug": "mapbox"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Mistral API",
+  "tagline": "AI 模型｜欧洲开源系大模型",
+  "fields": {
+   "网址": "https://mistral.ai",
+   "注册": "console.mistral.ai 注册，选择免费实验计划",
+   "额度": "定价页显示 Free 计划，限额不公开数字，以官方控制台为准",
+   "用法": "OpenAI 风格的 chat/completions 与 Python / JS SDK",
+   "Agent 适配": "支持函数调用与 Agents 接口，连接器 100+",
+   "场景": "多语种文案、外贸邮件起草、低成本推理",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "AI模型",
+  "url": "https://mistral.ai",
+  "direction": "一人公司",
+  "slug": "mistral-api"
+ },
+ {
+  "issue": "008",
+  "date": "2026-11-14",
+  "name": "Bitly",
+  "tagline": "短链分析｜追踪每次点击",
+  "fields": {
+   "网址": "https://bitly.com",
+   "注册": "bitly.com 免费注册，在开发者设置生成 Token",
+   "额度": "定价页：Free 每月 5 条链接、2 个二维码、3 个自定义后缀，点击与扫码统计不限；接口额度以官方控制台为准",
+   "用法": "POST /v4/shorten 创建短链，GET 取点击数据",
+   "Agent 适配": "REST + Token，适合做 Agent 的投放追踪工具",
+   "场景": "自媒体各渠道引流对比、外贸目录二维码、邮件链接追踪",
+   "匹配度": "★★☆☆☆"
+  },
+  "category": "短链分析",
+  "url": "https://bitly.com",
+  "direction": "一人公司",
+  "slug": "bitly"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Langfuse",
+  "tagline": "黑匣子｜Agent 全链路观测",
+  "fields": {
+   "网址": "https://langfuse.com ；文档 https://langfuse.com/docs",
+   "注册": "邮箱/Google/GitHub 登录，Hobby 计划免费，无需绑卡",
+   "额度": "Hobby 免费：每月 5 万 units、保留 30 天数据、2 个用户、摄取 1,000 请求/分钟、通用 API 30 请求/分钟；开源可自托管免费",
+   "用法": "Python/JS SDK、OpenTelemetry，或经 Langfuse AI Gateway/LiteLLM 代理记录",
+   "Agent 适配": "官方 MCP 与 CLI；Trace、会话、Token 与成本追踪、提示词版本管理、评测",
+   "场景": "盯住你的外贸客服 Agent 每次调用花了多少钱、哪一步出错",
+   "匹配度": "★★★★★"
+  },
+  "category": "Agent观测",
+  "url": "https://langfuse.com",
+  "direction": "一人公司",
+  "slug": "langfuse"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Sentry",
+  "tagline": "报警器｜报错监控与 MCP",
+  "fields": {
+   "网址": "https://sentry.io ；MCP https://mcp.sentry.dev",
+   "注册": "邮箱/Google/GitHub 登录，选 Developer 免费计划",
+   "额度": "Developer 免费：仅 1 个用户、5k 错误、5M spans、5GB 日志、50 次会话回放、10 个自定义仪表盘、30 天回溯，含 MCP 访问",
+   "用法": "各语言 SDK 一行初始化；Sentry CLI；MCP 让 Agent 直接读报错",
+   "Agent 适配": "Agent Tracing、MCP 监控、官方 MCP 服务器",
+   "场景": "你的自动化脚本、网站下单流程出错时第一时间知道",
+   "匹配度": "★★★★☆"
+  },
+  "category": "报错监控",
+  "url": "https://sentry.io",
+  "direction": "一人公司",
+  "slug": "sentry"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "PostHog",
+  "tagline": "数据罗盘｜产品分析与 AI 观测",
+  "fields": {
+   "网址": "https://posthog.com ；文档 https://posthog.com/docs",
+   "注册": "邮箱/Google/GitHub 登录，页面写明无需绑卡",
+   "额度": "每月免费且按月重置：分析 100 万 events、错误追踪 10 万 exceptions、AI Observability 10 万 events、问卷 1500 份回复",
+   "用法": "JS/Python 等 SDK 或 HTTP 采集接口",
+   "Agent 适配": "官方 MCP；可追踪 LLM 调用与评测",
+   "场景": "自媒体落地页转化、外贸独立站访客行为分析",
+   "匹配度": "★★★★☆"
+  },
+  "category": "产品分析",
+  "url": "https://posthog.com",
+  "direction": "一人公司",
+  "slug": "posthog"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Gmail API",
+  "tagline": "收发信手｜邮箱自动化",
+  "fields": {
+   "网址": "https://developers.google.com/workspace/gmail",
+   "注册": "Google Cloud 控制台新建项目 → 启用 Gmail API → 配 OAuth 同意屏幕",
+   "额度": "官方称标准使用无额外费用；每项目 120 万 quota units/分钟，每用户 6,000/分钟；每日计费阈值 8,000 万 units；单封邮件最多 500 收件人",
+   "用法": "REST 或各语言客户端库；messages.send 为 100 units",
+   "Agent 适配": "官方 Gmail MCP 服务器（搜索邮件线程、建草稿、打标签）",
+   "场景": "外贸询盘自动分类、起草回复草稿、跟进未回复客户",
+   "匹配度": "★★★★★"
+  },
+  "category": "邮箱自动化",
+  "url": "https://developers.google.com/workspace/gmail",
+  "direction": "一人公司",
+  "slug": "gmail-api"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Google Calendar API",
+  "tagline": "日程官｜排期与会议",
+  "fields": {
+   "网址": "https://developers.google.com/workspace/calendar",
+   "注册": "同一 Google Cloud 项目启用 Calendar API，OAuth 授权",
+   "额度": "官方称标准使用无额外费用；每项目 10,000 请求/分钟，每用户 600/分钟；每日计费阈值 100 万请求",
+   "用法": "REST；events.insert/list，freebusy.query 查空闲，支持推送通知",
+   "Agent 适配": "官方 Calendar MCP（创建/搜索事件、suggest_time）",
+   "场景": "自动约客户视频会议、发布日历排期、交付节点提醒",
+   "匹配度": "★★★★☆"
+  },
+  "category": "日程排期",
+  "url": "https://developers.google.com/workspace/calendar",
+  "direction": "一人公司",
+  "slug": "google-calendar-api"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Google Drive API",
+  "tagline": "文件柜｜资料读写",
+  "fields": {
+   "网址": "https://developers.google.com/workspace/drive",
+   "注册": "Google Cloud 项目启用 Drive API，OAuth 授权",
+   "额度": "每项目 100 万 quota units/分钟，每用户 325,000/分钟，每项目每日出站 1 TB；Workspace 用户每日上传上限 750 GB；每日计费阈值详见官方页",
+   "用法": "REST；files.list/create/get，支持分块上传",
+   "Agent 适配": "配合 Docs/Sheets API 做报价单、合同、素材归档",
+   "场景": "把客户资料、产品图、剪辑素材自动归档到文件夹",
+   "匹配度": "★★★★☆"
+  },
+  "category": "文件存储",
+  "url": "https://developers.google.com/workspace/drive",
+  "direction": "一人公司",
+  "slug": "google-drive-api"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Cloudflare R2",
+  "tagline": "仓库｜零出口费对象存储",
+  "fields": {
+   "网址": "https://developers.cloudflare.com/r2",
+   "注册": "Cloudflare 账号 → R2 → 创建存储桶（可能需绑支付方式，以控制台为准）",
+   "额度": "每月免费 10 GB 存储、100 万次 Class A、1,000 万次 Class B 操作；出口流量免费",
+   "用法": "S3 兼容 API（boto3、aws-sdk），或 Workers 绑定",
+   "Agent 适配": "Cloudflare 官方 MCP 服务器；预签名 URL 方便交付文件",
+   "场景": "存放视频、产品图、PDF 报价，外发给客户不怕流量费",
+   "匹配度": "★★★★☆"
+  },
+  "category": "对象存储",
+  "url": "https://developers.cloudflare.com/r2",
+  "direction": "一人公司",
+  "slug": "cloudflare-r2"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Cloudflare Workers",
+  "tagline": "跑腿员｜免费无服务器函数",
+  "fields": {
+   "网址": "https://developers.cloudflare.com/workers",
+   "注册": "Cloudflare 账号即默认 Free 计划",
+   "额度": "Free：每天 10 万请求、每次调用 10 毫秒 CPU；Workers KV 每天 10 万次读、1,000 次写，存 1 GB；日志每天 20 万事件保留 3 天",
+   "用法": "wrangler CLI 部署 JS/TS，Webhook 接收与定时任务",
+   "Agent 适配": "可做 Agent 的 Webhook 入口、自建 MCP 服务器",
+   "场景": "接 Stripe/Telegram/表单回调，触发你的 Agent 流程",
+   "匹配度": "★★★★★"
+  },
+  "category": "无服务器",
+  "url": "https://developers.cloudflare.com/workers",
+  "direction": "一人公司",
+  "slug": "cloudflare-workers"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "AfterShip Tracking",
+  "tagline": "物流雷达｜多承运商追踪",
+  "fields": {
+   "网址": "https://www.aftership.com/tracking ；文档 https://www.aftership.com/docs/tracking",
+   "注册": "官网 Sign up；页面显示有 Free 计划",
+   "额度": "Free 计划的具体单量以官方控制台为准；付费 Essentials $29/月含 6,000 单/年，超出 $0.08/单；API 与 Webhook 在 Premium（$59/月起，10 请求/秒）",
+   "用法": "REST API 创建运单，自动识别承运商，Webhook 推送状态",
+   "Agent 适配": "支持 2,000+ 承运商与预计送达时间；Free 计划不含 API，需注意",
+   "场景": "外贸发货后给客户发追踪页，减少「货到哪了」的询问",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "物流追踪",
+  "url": "https://www.aftership.com/tracking",
+  "direction": "物流",
+  "slug": "aftership-tracking"
+ },
+ {
+  "issue": "009",
+  "date": "2026-11-15",
+  "name": "Stripe",
+  "tagline": "收银台｜全球收款",
+  "fields": {
+   "网址": "https://stripe.com ；文档 https://docs.stripe.com",
+   "注册": "邮箱注册，开通收款需验证身份与银行账户",
+   "额度": "无开户费、无月费；按成功交易收费，美国国内卡 2.9% + 30¢，国际卡另加 1.5%，需货币转换另加 1%",
+   "用法": "REST/SDK 创建 Checkout 链接与 Webhook",
+   "Agent 适配": "Webhook 驱动自动发货、开发票",
+   "场景": "一人公司卖服务/课程/外贸样品，自动生成付款链接",
+   "匹配度": "★★★★☆"
+  },
+  "category": "全球收款",
+  "url": "https://stripe.com",
+  "direction": "一人公司",
+  "slug": "stripe"
+ }
+]
