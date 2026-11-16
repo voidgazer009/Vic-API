@@ -1709,5 +1709,195 @@
   "url": "https://stripe.com",
   "direction": "一人公司",
   "slug": "stripe"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "World Bank Indicators API",
+  "tagline": "外贸数据｜全球经济指标库",
+  "fields": {
+   "网址": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation ；接口 https://api.worldbank.org/v2/country",
+   "注册": "无需注册，无需 Key，直接 GET 调用",
+   "额度": "以官方控制台为准（实测无 Key 即可返回 JSON，官方文档未写明具体请求上限）",
+   "用法": "GET https://api.worldbank.org/v2/country/CN/indicator/NE.EXP.GNFS.CD?format=json 返回中国货物与服务出口额",
+   "Agent 适配": "纯 REST + JSON，Agent 可直接按国家和指标代码拼 URL，无需认证流程",
+   "场景": "开发新市场前，让 Agent 对比各国进口规模、GDP、人口，生成选市场简报",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸数据",
+  "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+  "direction": "外贸",
+  "slug": "world-bank-indicators-api"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "USITC HTS API",
+  "tagline": "外贸关税｜美国关税税则查询",
+  "fields": {
+   "网址": "https://hts.usitc.gov ；接口 https://hts.usitc.gov/reststop/search",
+   "注册": "无需注册，无需 Key",
+   "额度": "以官方控制台为准（实测无 Key 可用，官方未公布具体上限）",
+   "用法": "GET https://hts.usitc.gov/reststop/search?keyword=bicycle 按关键词返回 HTS 编码、税率与描述",
+   "Agent 适配": "JSON 返回，可让 Agent 先把产品描述转成关键词，再回查 HS 编码和税率",
+   "场景": "对美报价前自动查产品税号与关税，写进报价单",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸关税",
+  "url": "https://hts.usitc.gov",
+  "direction": "外贸",
+  "slug": "usitc-hts-api"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "MyMemory Translation API",
+  "tagline": "外贸翻译｜翻译库",
+  "fields": {
+   "网址": "https://mymemory.translated.net ；文档 https://mymemory.translated.net/doc/spec.php",
+   "注册": "匿名可用；在参数 de 里填有效邮箱即可提升额度",
+   "额度": "匿名每天 5000 字符；填邮箱每天 5 万字符；每次请求 q 最多 500 字节",
+   "用法": "GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it",
+   "Agent 适配": "简单 GET，适合短句、标题、产品名批量翻译；长文建议拆段",
+   "场景": "外贸询盘标题、产品卖点短句快速多语言翻译",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "外贸翻译",
+  "url": "https://mymemory.translated.net",
+  "direction": "外贸",
+  "slug": "mymemory-translation-api"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "AISstream",
+  "tagline": "物流船舶｜全球船舶 AIS 实时流",
+  "fields": {
+   "网址": "https://aisstream.io ；文档 https://aisstream.io/documentation",
+   "注册": "账号页生成 API Key（官方文档未写明套餐收费）",
+   "额度": "每账号 3 个订阅连接、每 IP 3 个连接；单个订阅最多 200 个 MMSI；订阅更新每连接每秒 1 次；官方说明不提供 SLA",
+   "用法": "WebSocket 连接 wss://stream.aisstream.io/v0/stream，3 秒内发送含 APIKey 与 BoundingBoxes 的订阅 JSON",
+   "Agent 适配": "需在服务器端运行，不允许浏览器直连；可用 MMSI 过滤只看自己的船",
+   "场景": "盯着货柜船位置与靠港动态，提前告知客户到港时间",
+   "匹配度": "★★★★☆"
+  },
+  "category": "物流船舶AIS",
+  "url": "https://aisstream.io",
+  "direction": "物流",
+  "slug": "aisstream"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "Nominatim",
+  "tagline": "物流地理｜地址转坐标",
+  "fields": {
+   "网址": "https://nominatim.org ；公共服务政策 https://operations.osmfoundation.org/policies/nominatim/",
+   "注册": "公共服务无需 Key，但必须带能识别应用的 User-Agent 或 Referer",
+   "额度": "公共服务最多每秒 1 次请求；定期运行的脚本限每分钟 4 次；结果必须缓存；禁止自动补全和网格式批量查询",
+   "用法": "GET https://nominatim.openstreetmap.org/search?q=Rotterdam&format=json",
+   "Agent 适配": "适合偶尔把地址转坐标；批量需求请自建或换付费服务",
+   "场景": "把客户发来的收货地址转成坐标，再接路线或天气 API",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "物流地理编码",
+  "url": "https://nominatim.org",
+  "direction": "物流",
+  "slug": "nominatim"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "Wikimedia APIs",
+  "tagline": "自媒体素材｜维基素材",
+  "fields": {
+   "网址": "https://api.wikimedia.org ；限速说明 https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits",
+   "注册": "只读可免注册；必须带含联系方式的 User-Agent",
+   "额度": "官方 2026 年起按用户限速；建议并发 3 个或更少；具体上限以官方页面为准，规则仍在调整",
+   "用法": "REST 或 Action API，读取词条摘要、当日精选内容、图片版权信息",
+   "Agent 适配": "JSON 接口丰富，可查事实、找 Commons 图片，并读取署名信息",
+   "场景": "写科普短视频脚本前让 Agent 查证事实并找可商用图片",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体素材",
+  "url": "https://api.wikimedia.org",
+  "direction": "自媒体",
+  "slug": "wikimedia-apis"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "Freesound API",
+  "tagline": "自媒体音效｜免费音效",
+  "fields": {
+   "网址": "https://freesound.org ；文档 https://freesound.org/docs/api/",
+   "注册": "先注册账号，再在 https://freesound.org/apiv2/apply 申请 API Key",
+   "额度": "以官方控制台为准（官方文档说明按用户账号统一限流，可用接口查看当前用量）",
+   "用法": "Token 认证，请求时附带 API Key，可搜索与预览音效",
+   "Agent 适配": "支持 Token 与 OAuth2 两种认证；按关键词搜索音效",
+   "场景": "给短视频自动配转场与环境音效，使用前核对每条音效的授权",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "自媒体音效",
+  "url": "https://freesound.org",
+  "direction": "自媒体",
+  "slug": "freesound-api"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "Bluesky API (AT Protocol)",
+  "tagline": "自媒体发布｜开放社交",
+  "fields": {
+   "网址": "https://bsky.social ；文档 https://docs.bsky.app",
+   "注册": "注册 Bluesky 账号即可；读取公开资料无需登录",
+   "额度": "以官方控制台为准（限速文档页为动态页面，未取到具体数字）",
+   "用法": "GET https://api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=bsky.app 读取公开资料；发帖需登录会话",
+   "Agent 适配": "开放协议，读取与发帖都是 HTTP 接口，适合自动化发布",
+   "场景": "把每日精选自动发到海外账号，并抓取评论做二次运营",
+   "匹配度": "★★★★☆"
+  },
+  "category": "开放社交",
+  "url": "https://bsky.social",
+  "direction": "一人公司",
+  "slug": "bluesky-api-at-protocol"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "NVIDIA NIM APIs",
+  "tagline": "AI模型｜免费推理",
+  "fields": {
+   "网址": "https://build.nvidia.com ；文档 https://docs.api.nvidia.com/nim/docs/api-quickstart",
+   "注册": "用邮箱注册 NVIDIA 开发者账号后生成 API Key",
+   "额度": "官方页面写明提供免费推理端点，具体速率以官方控制台为准",
+   "用法": "OpenAI 兼容接口，base_url 指向 https://integrate.api.nvidia.com/v1，Key 填 YOUR_API_KEY",
+   "Agent 适配": "OpenAI 兼容，现有 Agent 框架改 base_url 即可接入；页面列有 DeepSeek、Nemotron 等模型",
+   "场景": "给低成本客服和文案 Agent 增加一个免费备用模型",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI模型",
+  "url": "https://build.nvidia.com",
+  "direction": "一人公司",
+  "slug": "nvidia-nim-apis"
+ },
+ {
+  "issue": "010",
+  "date": "2026-11-16",
+  "name": "Context7",
+  "tagline": "AI一人公司｜最新文档",
+  "fields": {
+   "网址": "https://context7.com ；套餐 https://context7.com/plans",
+   "注册": "官网登录；Free 套餐 $0，含公开仓库、访问控制、OAuth 2.0",
+   "额度": "Free 为 $0 套餐，页面未写明调用数字，以官方控制台为准；Pro $10 每席位每月，含私有仓库与无限 API 调用",
+   "用法": "在 Agent 或 IDE 中配置官方 MCP 服务器，提问时让它查询最新库文档",
+   "Agent 适配": "官方 MCP；减少 Agent 写代码时调用过时 API 的错误",
+   "场景": "自动化脚本和网站由 Agent 编写时，随时拉取最新官方文档",
+   "匹配度": "★★★★★"
+  },
+  "category": "AI一人公司MCP",
+  "url": "https://context7.com",
+  "direction": "一人公司",
+  "slug": "context7"
  }
 ]
