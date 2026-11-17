@@ -3,14 +3,17 @@
 品牌「Vic」。每天 08:00（香港时间）自动更新 10 个免费 API，四个方向每个至少 1 个：外贸、国际物流、AI 一人公司、全球自媒体。
 额度只写官方页面核对过的数字，以收录当期标注的核对日期为准；用前请以官方控制台为准。
 
-共收录 **100** 个 API。机器可读：[`apis.json`](apis.json)、[`apis.csv`](apis.csv)。每期原文在 `issues/`，杂志版 PDF 在 `pdf/`。
+共收录 **110** 个 API。机器可读：[`apis.json`](apis.json)、[`apis.csv`](apis.csv)。每期原文在 `issues/`，杂志版 PDF 在 `pdf/`。
 
 每次上传前都要通过 [审核机制](REVIEW.md)：密钥/个人信息/敏感文件扫描、字段与额度检查、官方页面事实核查、安全复核，全部通过才推送。
 
-## 外贸（14）
+## 外贸（17）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [VATcomply](apis/vatcomply.md) | 外贸合规 | 欧盟增值税与汇率 | 011 | ★★★★☆ |
+| [Currency API (fawazahmed0)](apis/currency-api-fawazahmed0.md) | 外贸汇率 | 免限流汇率库 | 011 | ★★★★☆ |
+| [GDELT DOC API](apis/gdelt-doc-api.md) | 外贸情报 | 全球新闻舆情搜索 | 011 | ★★★★☆ |
 | [World Bank Indicators API](apis/world-bank-indicators-api.md) | 外贸数据 | 全球经济指标库 | 010 | ★★★★☆ |
 | [USITC HTS API](apis/usitc-hts-api.md) | 外贸关税 | 美国关税税则查询 | 010 | ★★★★☆ |
 | [MyMemory Translation API](apis/mymemory-translation-api.md) | 外贸翻译 | 翻译库 | 010 | ★★★☆☆ |
@@ -26,10 +29,12 @@
 | [UN Comtrade](apis/un-comtrade.md) | 外贸数据 | 联合国全球进出口统计 | 002 | ★★★★☆ |
 | [Frankfurter](apis/frankfurter.md) | 外贸汇率 | 免 Key 开源汇率 API | 001 | ★★★★☆ |
 
-## 物流（9）
+## 物流（11）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [OpenSky Network API](apis/opensky-network-api.md) | 物流航空 | 全球飞机实时位置 | 011 | ★★★☆☆ |
+| [aviationstack](apis/aviationstack.md) | 物流航班 | 航班状态与机场数据 | 011 | ★★★☆☆ |
 | [AISstream](apis/aisstream.md) | 物流船舶AIS | 全球船舶 AIS 实时流 | 010 | ★★★★☆ |
 | [Nominatim](apis/nominatim.md) | 物流地理编码 | 地址转坐标 | 010 | ★★★☆☆ |
 | [AfterShip Tracking](apis/aftership-tracking.md) | 物流追踪 | 多承运商追踪 | 009 | ★★★☆☆ |
@@ -40,10 +45,12 @@
 | [openrouteservice](apis/openrouteservice.md) | 物流路线 | 路线与配送优化 | 002 | ★★★★☆ |
 | [17TRACK API](apis/17track-api.md) | 物流追踪 | 全球包裹追踪 | 001 | ★★★☆☆（额度有限，适合试跑） |
 
-## 自媒体（11）
+## 自媒体（13）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [GIPHY API](apis/giphy-api.md) | 自媒体素材 | 全球最大 GIF 库 | 011 | ★★★☆☆ |
+| [Openverse API](apis/openverse-api.md) | 自媒体素材 | 开放授权图片音频库 | 011 | ★★★★☆ |
 | [Wikimedia APIs](apis/wikimedia-apis.md) | 自媒体素材 | 维基素材 | 010 | ★★★★☆ |
 | [Freesound API](apis/freesound-api.md) | 自媒体音效 | 免费音效 | 010 | ★★★☆☆ |
 | [Cloudinary](apis/cloudinary.md) | 自媒体素材处理 | 自媒体素材自动化 | 007 | ★★★★☆ |
@@ -56,10 +63,13 @@
 | [ElevenLabs](apis/elevenlabs.md) | 自媒体配音 | AI 配音与语音转文字 | 002 | ★★★★☆（免费额度少，适合试样） |
 | [Pexels API](apis/pexels-api.md) | 自媒体素材 | 免费图片和视频 | 001 | ★★★★☆ |
 
-## 一人公司（66）
+## 一人公司（69）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [Voyage AI](apis/voyage-ai.md) | AI向量 | 嵌入与重排模型 | 011 | ★★★★★ |
+| [SambaNova Cloud](apis/sambanova-cloud.md) | AI模型 | 高速推理 OpenAI 兼容 | 011 | ★★★★☆ |
+| [Cloudflare Browser Run](apis/cloudflare-browser-run.md) | AI抓取 | 云端浏览器与网页转 Markdown | 011 | ★★★★★ |
 | [Bluesky API (AT Protocol)](apis/bluesky-api-at-protocol.md) | 开放社交 | 开放社交 | 010 | ★★★★☆ |
 | [NVIDIA NIM APIs](apis/nvidia-nim-apis.md) | AI模型 | 免费推理 | 010 | ★★★★☆ |
 | [Context7](apis/context7.md) | AI一人公司MCP | 最新文档 | 010 | ★★★★★ |

@@ -99,3 +99,13 @@ issue,date,direction,category,name,url,quota,match
 010,2026-11-16,一人公司,开放社交,Bluesky API (AT Protocol),https://bsky.social,以官方控制台为准（限速文档页为动态页面，未取到具体数字）,★★★★☆
 010,2026-11-16,一人公司,AI模型,NVIDIA NIM APIs,https://build.nvidia.com,官方页面写明提供免费推理端点，具体速率以官方控制台为准,★★★★☆
 010,2026-11-16,一人公司,AI一人公司MCP,Context7,https://context7.com,Free 为 $0 套餐，页面未写明调用数字，以官方控制台为准；Pro $10 每席位每月，含私有仓库与无限 API 调用,★★★★★
+011,2026-11-17,外贸,外贸合规,VATcomply,https://www.vatcomply.com,无需 Key；按 IP 限速每秒 2 次请求,★★★★☆
+011,2026-11-17,外贸,外贸汇率,Currency API (fawazahmed0),https://github.com/fawazahmed0/exchange-api,官方 README 写明无请求限制，支持 200+ 币种，每日更新,★★★★☆
+011,2026-11-17,外贸,外贸情报,GDELT DOC API,https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/,以官方控制台为准（官方文档未写明请求上限；检索窗口为最近 3 个月，单次最多 250 条）,★★★★☆
+011,2026-11-17,物流,物流航空,OpenSky Network API,https://openskynetwork.github.io/opensky-api/rest.html,"匿名每天 400 积分；标准注册用户每天 4,000 积分；状态、轨迹、航班三类接口各自独立计额",★★★☆☆
+011,2026-11-17,物流,物流航班,aviationstack,https://aviationstack.com/product,"免费版每月 100 次请求，仅限非商业用途；商业用途需付费版（Basic $49.99 每月，10,000 次）",★★★☆☆
+011,2026-11-17,自媒体,自媒体素材,GIPHY API,https://developers.giphy.com/docs/api/,新建 Key 为 Beta，每小时限 100 次搜索或调用；需要更多须申请生产 Key,★★★☆☆
+011,2026-11-17,自媒体,自媒体素材,Openverse API,https://docs.openverse.org/api/reference/index.html,以官方控制台为准（本次核对的官方文档页未列出具体数字）,★★★★☆
+011,2026-11-17,一人公司,AI向量,Voyage AI,https://docs.voyageai.com/docs/pricing,"每个账号 voyage-4-large、voyage-4、voyage-4-lite 等前 2 亿 token 免费；voyage-finance-2 等前 5,000 万 token 免费；重排模型前 2 亿 token 免费；多模态前 2 亿文本 token 加 1,500 亿像素免费",★★★★★
+011,2026-11-17,一人公司,AI模型,SambaNova Cloud,https://docs.sambanova.ai/docs/en/models/rate-limits,免费档每个模型（DeepSeek-V3.1、Meta-Llama-3.3-70B-Instruct、gpt-oss-120b）每分钟 20 次、每天 20 次、每天 20 万 token；绑支付方式后升级为开发者档,★★★★☆
+011,2026-11-17,一人公司,AI抓取,Cloudflare Browser Run,https://developers.cloudflare.com/browser-rendering/platform/pricing/,Workers 免费版每天 10 分钟浏览器时间，最多 3 个并发浏览器；付费版每月含 10 小时，超出每小时 $0.09,★★★★★
