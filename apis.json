@@ -2089,5 +2089,195 @@
   "url": "https://developers.cloudflare.com/browser-rendering/platform/pricing/",
   "direction": "一人公司",
   "slug": "cloudflare-browser-run"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Azure AI Translator",
+  "tagline": "外贸翻译｜每月 200 万字符",
+  "fields": {
+   "网址": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator/ ；文档 https://learn.microsoft.com/azure/ai-services/translator/",
+   "注册": "需 Azure 账号，创建 Translator 资源时选 F0 免费档",
+   "额度": "F0 免费档每月 200 万字符（标准翻译与自定义翻译训练合计）",
+   "用法": "POST https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=en ，请求头 Ocp-Apim-Subscription-Key: YOUR_API_KEY ，正文为 JSON 文本数组",
+   "Agent 适配": "REST + JSON，一次可传多段文本、多个目标语言，适合批量翻译询盘和产品描述",
+   "场景": "Agent 把海外客户询盘译成中文，再把回复译回客户语言",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸翻译",
+  "url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator/",
+  "direction": "外贸",
+  "slug": "azure-ai-translator"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "freecurrencyapi",
+  "tagline": "外贸汇率｜33 种货币汇率",
+  "fields": {
+   "网址": "https://freecurrencyapi.com",
+   "注册": "邮箱注册即得 API Key",
+   "额度": "免费档每月 1,000 次请求，每分钟 10 次；覆盖 33 种货币",
+   "用法": "GET https://api.freecurrencyapi.com/v1/latest?apikey=YOUR_API_KEY&base_currency=USD",
+   "Agent 适配": "官网提供 MCP 服务器与面向 AI Agent 的说明页，返回简洁 JSON",
+   "场景": "Agent 报价前取最新汇率，把美元报价换算成客户本币",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸汇率",
+  "url": "https://freecurrencyapi.com",
+  "direction": "外贸",
+  "slug": "freecurrencyapi"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "TomTom Geocoding & Routing",
+  "tagline": "物流地理｜地址转坐标与路线",
+  "fields": {
+   "网址": "https://developer.tomtom.com/pricing ；文档 https://docs.tomtom.com",
+   "注册": "my.tomtom.com 注册，无需信用卡",
+   "额度": "Geocoding、Reverse Geocoding、Routing 每月各 2 万次免费；Matrix Routing 每月 2,500 次",
+   "用法": "GET https://api.tomtom.com/search/2/geocode/Shanghai%20Port.json?key=YOUR_API_KEY",
+   "Agent 适配": "REST + JSON，另有 JS SDK；可把地址解析、路线和距离矩阵串成物流调度工具",
+   "场景": "Agent 把客户仓库地址转成坐标，再算多个仓库的最短送货路线",
+   "匹配度": "★★★★☆"
+  },
+  "category": "物流地理",
+  "url": "https://developer.tomtom.com/pricing",
+  "direction": "物流",
+  "slug": "tomtom-geocoding-routing"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Visual Crossing Weather",
+  "tagline": "物流天气｜15 天预报加 50 年历史",
+  "fields": {
+   "网址": "https://www.visualcrossing.com/weather-data-pricing/ ；MCP 说明 https://www.visualcrossing.com/resources/documentation/weather-api/visual-crossing-mcp-guide/",
+   "注册": "邮箱注册获取 Key",
+   "额度": "免费档每天 1,000 条记录（每月上限 30,000 条）；每次查询最多 5 个地点；并发 1；需署名",
+   "用法": "GET https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Shanghai?unitGroup=metric&key=YOUR_API_KEY",
+   "Agent 适配": "一个接口同时返回预报与历史，官方提供 MCP Server",
+   "场景": "Agent 在发货前查港口天气，判断延误风险并通知客户",
+   "匹配度": "★★★★☆"
+  },
+  "category": "物流天气",
+  "url": "https://www.visualcrossing.com/weather-data-pricing/",
+  "direction": "物流",
+  "slug": "visual-crossing-weather"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Zippopotam.us",
+  "tagline": "物流邮编｜60 多国邮编查询",
+  "fields": {
+   "网址": "https://zippopotam.us",
+   "注册": "无需注册，无需 Key",
+   "额度": "官网未公布具体限额；以官方说明为准",
+   "用法": "GET https://api.zippopotam.us/us/90210 返回城市、州、经纬度；GET https://api.zippopotam.us/us/ma/belmont 可由城市反查邮编",
+   "Agent 适配": "纯 GET + JSON，覆盖 60 多个国家，适合表单校验与地址补全",
+   "场景": "Agent 在建发货单时校验收件邮编并补全城市与州",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "物流邮编",
+  "url": "https://zippopotam.us",
+  "direction": "物流",
+  "slug": "zippopotam-us"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Speechmatics",
+  "tagline": "自媒体转写｜55 种以上语言",
+  "fields": {
+   "网址": "https://www.speechmatics.com/pricing ；文档 https://docs.speechmatics.com",
+   "注册": "portal.speechmatics.com 注册，无需信用卡",
+   "额度": "注册送 100 美元额度；文字转语音前 100 万字符免费；免费档实时并发 2 路",
+   "用法": "POST https://asr.api.speechmatics.com/v2/jobs ，请求头 Authorization: Bearer YOUR_API_KEY ，上传音视频并指定语言",
+   "Agent 适配": "支持说话人分离、词级时间戳、中英混说，REST + 实时 WebSocket",
+   "场景": "Agent 把采访视频转成带时间戳的字幕与文章草稿",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体转写",
+  "url": "https://www.speechmatics.com/pricing",
+  "direction": "自媒体",
+  "slug": "speechmatics"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Shotstack",
+  "tagline": "自媒体视频｜API 合成短视频",
+  "fields": {
+   "网址": "https://shotstack.io/pricing/ ；文档 https://shotstack.io/docs/",
+   "注册": "注册即可用沙盒，无需信用卡",
+   "额度": "注册送 10 个额度（30 天有效）；免费沙盒；按需付费每分钟视频 0.20 美元",
+   "用法": "POST https://api.shotstack.io/edit/stage/render ，请求头 x-api-key: YOUR_API_KEY ，正文为 JSON 时间线",
+   "Agent 适配": "官方支持 MCP 与命令行，也有 Make、Zapier、n8n 集成",
+   "场景": "Agent 把文案、图片和配音自动拼成竖屏短视频",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体视频",
+  "url": "https://shotstack.io/pricing/",
+  "direction": "自媒体",
+  "slug": "shotstack"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Arcade",
+  "tagline": "AI工具调用｜Agent 的托管工具层",
+  "fields": {
+   "网址": "https://www.arcade.dev/pricing ；文档 https://docs.arcade.dev",
+   "注册": "arcade.dev 注册，免费档无需信用卡",
+   "额度": "Free 档每月 2,000 次工具调用，平台费 0 美元；Team 档 25 美元/月，超出每次 0.01 美元",
+   "用法": "用官方 SDK 以 YOUR_API_KEY 初始化客户端，为用户授权后调用托管工具执行真实操作",
+   "Agent 适配": "托管授权与工具执行，面向 Agent 的 SDK，社区支持在 Discord 与 GitHub",
+   "场景": "Agent 代你发邮件、改表格、建日程，授权和权限由 Arcade 托管",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI工具调用",
+  "url": "https://www.arcade.dev/pricing",
+  "direction": "一人公司",
+  "slug": "arcade"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Cloudflare AI Gateway",
+  "tagline": "AI网关｜缓存限流与日志",
+  "fields": {
+   "网址": "https://developers.cloudflare.com/ai-gateway/reference/pricing/",
+   "注册": "Cloudflare 账号，控制台创建 Gateway",
+   "额度": "核心功能免费（分析、缓存、限流）；Workers Free 日志总量 10 万条",
+   "用法": "把 OpenAI 等模型的请求地址改成 https://gateway.ai.cloudflare.com/v1/ 开头的网关地址，其余不变",
+   "Agent 适配": "一行改地址即可接入，为所有模型调用统一加缓存、限流与用量统计",
+   "场景": "Agent 的重复提问走缓存省钱，并看清每个模型花了多少",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI网关",
+  "url": "https://developers.cloudflare.com/ai-gateway/reference/pricing/",
+  "direction": "一人公司",
+  "slug": "cloudflare-ai-gateway"
+ },
+ {
+  "issue": "012",
+  "date": "2026-11-18",
+  "name": "Pipedream Connect",
+  "tagline": "AI集成｜3000 多个应用工具",
+  "fields": {
+   "网址": "https://pipedream.com/pricing ；文档 https://pipedream.com/docs/connect",
+   "注册": "pipedream.com 注册，免费且无需信用卡",
+   "额度": "Free 档开发环境免费，含 3,000+ 连接器、1 万+ 预置工具与 MCP 服务器；上线生产需 Startup 档（每月 99 美元年付）",
+   "用法": "用官方 TypeScript SDK 为用户创建托管授权，再通过 MCP 或 Connect API 调用工具",
+   "Agent 适配": "托管 OAuth，一次接入 3,000 多个应用，原生 MCP",
+   "场景": "Agent 在开发阶段免费试通 Gmail、Slack、表格等流程，再决定是否上线",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI集成",
+  "url": "https://pipedream.com/pricing",
+  "direction": "一人公司",
+  "slug": "pipedream-connect"
  }
 ]

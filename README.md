@@ -3,14 +3,16 @@
 品牌「Vic」。每天 08:00（香港时间）自动更新 10 个免费 API，四个方向每个至少 1 个：外贸、国际物流、AI 一人公司、全球自媒体。
 额度只写官方页面核对过的数字，以收录当期标注的核对日期为准；用前请以官方控制台为准。
 
-共收录 **110** 个 API。机器可读：[`apis.json`](apis.json)、[`apis.csv`](apis.csv)。每期原文在 `issues/`，杂志版 PDF 在 `pdf/`。
+共收录 **120** 个 API。机器可读：[`apis.json`](apis.json)、[`apis.csv`](apis.csv)。每期原文在 `issues/`，杂志版 PDF 在 `pdf/`。
 
 每次上传前都要通过 [审核机制](REVIEW.md)：密钥/个人信息/敏感文件扫描、字段与额度检查、官方页面事实核查、安全复核，全部通过才推送。
 
-## 外贸（17）
+## 外贸（19）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [Azure AI Translator](apis/azure-ai-translator.md) | 外贸翻译 | 每月 200 万字符 | 012 | ★★★★☆ |
+| [freecurrencyapi](apis/freecurrencyapi.md) | 外贸汇率 | 33 种货币汇率 | 012 | ★★★★☆ |
 | [VATcomply](apis/vatcomply.md) | 外贸合规 | 欧盟增值税与汇率 | 011 | ★★★★☆ |
 | [Currency API (fawazahmed0)](apis/currency-api-fawazahmed0.md) | 外贸汇率 | 免限流汇率库 | 011 | ★★★★☆ |
 | [GDELT DOC API](apis/gdelt-doc-api.md) | 外贸情报 | 全球新闻舆情搜索 | 011 | ★★★★☆ |
@@ -29,10 +31,13 @@
 | [UN Comtrade](apis/un-comtrade.md) | 外贸数据 | 联合国全球进出口统计 | 002 | ★★★★☆ |
 | [Frankfurter](apis/frankfurter.md) | 外贸汇率 | 免 Key 开源汇率 API | 001 | ★★★★☆ |
 
-## 物流（11）
+## 物流（14）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [TomTom Geocoding & Routing](apis/tomtom-geocoding-routing.md) | 物流地理 | 地址转坐标与路线 | 012 | ★★★★☆ |
+| [Visual Crossing Weather](apis/visual-crossing-weather.md) | 物流天气 | 15 天预报加 50 年历史 | 012 | ★★★★☆ |
+| [Zippopotam.us](apis/zippopotam-us.md) | 物流邮编 | 60 多国邮编查询 | 012 | ★★★☆☆ |
 | [OpenSky Network API](apis/opensky-network-api.md) | 物流航空 | 全球飞机实时位置 | 011 | ★★★☆☆ |
 | [aviationstack](apis/aviationstack.md) | 物流航班 | 航班状态与机场数据 | 011 | ★★★☆☆ |
 | [AISstream](apis/aisstream.md) | 物流船舶AIS | 全球船舶 AIS 实时流 | 010 | ★★★★☆ |
@@ -45,10 +50,12 @@
 | [openrouteservice](apis/openrouteservice.md) | 物流路线 | 路线与配送优化 | 002 | ★★★★☆ |
 | [17TRACK API](apis/17track-api.md) | 物流追踪 | 全球包裹追踪 | 001 | ★★★☆☆（额度有限，适合试跑） |
 
-## 自媒体（13）
+## 自媒体（15）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [Speechmatics](apis/speechmatics.md) | 自媒体转写 | 55 种以上语言 | 012 | ★★★★☆ |
+| [Shotstack](apis/shotstack.md) | 自媒体视频 | API 合成短视频 | 012 | ★★★★☆ |
 | [GIPHY API](apis/giphy-api.md) | 自媒体素材 | 全球最大 GIF 库 | 011 | ★★★☆☆ |
 | [Openverse API](apis/openverse-api.md) | 自媒体素材 | 开放授权图片音频库 | 011 | ★★★★☆ |
 | [Wikimedia APIs](apis/wikimedia-apis.md) | 自媒体素材 | 维基素材 | 010 | ★★★★☆ |
@@ -63,10 +70,13 @@
 | [ElevenLabs](apis/elevenlabs.md) | 自媒体配音 | AI 配音与语音转文字 | 002 | ★★★★☆（免费额度少，适合试样） |
 | [Pexels API](apis/pexels-api.md) | 自媒体素材 | 免费图片和视频 | 001 | ★★★★☆ |
 
-## 一人公司（69）
+## 一人公司（72）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [Arcade](apis/arcade.md) | AI工具调用 | Agent 的托管工具层 | 012 | ★★★★☆ |
+| [Cloudflare AI Gateway](apis/cloudflare-ai-gateway.md) | AI网关 | 缓存限流与日志 | 012 | ★★★★☆ |
+| [Pipedream Connect](apis/pipedream-connect.md) | AI集成 | 3000 多个应用工具 | 012 | ★★★★☆ |
 | [Voyage AI](apis/voyage-ai.md) | AI向量 | 嵌入与重排模型 | 011 | ★★★★★ |
 | [SambaNova Cloud](apis/sambanova-cloud.md) | AI模型 | 高速推理 OpenAI 兼容 | 011 | ★★★★☆ |
 | [Cloudflare Browser Run](apis/cloudflare-browser-run.md) | AI抓取 | 云端浏览器与网页转 Markdown | 011 | ★★★★★ |

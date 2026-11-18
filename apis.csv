@@ -109,3 +109,13 @@ issue,date,direction,category,name,url,quota,match
 011,2026-11-17,一人公司,AI向量,Voyage AI,https://docs.voyageai.com/docs/pricing,"每个账号 voyage-4-large、voyage-4、voyage-4-lite 等前 2 亿 token 免费；voyage-finance-2 等前 5,000 万 token 免费；重排模型前 2 亿 token 免费；多模态前 2 亿文本 token 加 1,500 亿像素免费",★★★★★
 011,2026-11-17,一人公司,AI模型,SambaNova Cloud,https://docs.sambanova.ai/docs/en/models/rate-limits,免费档每个模型（DeepSeek-V3.1、Meta-Llama-3.3-70B-Instruct、gpt-oss-120b）每分钟 20 次、每天 20 次、每天 20 万 token；绑支付方式后升级为开发者档,★★★★☆
 011,2026-11-17,一人公司,AI抓取,Cloudflare Browser Run,https://developers.cloudflare.com/browser-rendering/platform/pricing/,Workers 免费版每天 10 分钟浏览器时间，最多 3 个并发浏览器；付费版每月含 10 小时，超出每小时 $0.09,★★★★★
+012,2026-11-18,外贸,外贸翻译,Azure AI Translator,https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator/,F0 免费档每月 200 万字符（标准翻译与自定义翻译训练合计）,★★★★☆
+012,2026-11-18,外贸,外贸汇率,freecurrencyapi,https://freecurrencyapi.com,"免费档每月 1,000 次请求，每分钟 10 次；覆盖 33 种货币",★★★★☆
+012,2026-11-18,物流,物流地理,TomTom Geocoding & Routing,https://developer.tomtom.com/pricing,"Geocoding、Reverse Geocoding、Routing 每月各 2 万次免费；Matrix Routing 每月 2,500 次",★★★★☆
+012,2026-11-18,物流,物流天气,Visual Crossing Weather,https://www.visualcrossing.com/weather-data-pricing/,"免费档每天 1,000 条记录（每月上限 30,000 条）；每次查询最多 5 个地点；并发 1；需署名",★★★★☆
+012,2026-11-18,物流,物流邮编,Zippopotam.us,https://zippopotam.us,官网未公布具体限额；以官方说明为准,★★★☆☆
+012,2026-11-18,自媒体,自媒体转写,Speechmatics,https://www.speechmatics.com/pricing,注册送 100 美元额度；文字转语音前 100 万字符免费；免费档实时并发 2 路,★★★★☆
+012,2026-11-18,自媒体,自媒体视频,Shotstack,https://shotstack.io/pricing/,注册送 10 个额度（30 天有效）；免费沙盒；按需付费每分钟视频 0.20 美元,★★★★☆
+012,2026-11-18,一人公司,AI工具调用,Arcade,https://www.arcade.dev/pricing,"Free 档每月 2,000 次工具调用，平台费 0 美元；Team 档 25 美元/月，超出每次 0.01 美元",★★★★☆
+012,2026-11-18,一人公司,AI网关,Cloudflare AI Gateway,https://developers.cloudflare.com/ai-gateway/reference/pricing/,核心功能免费（分析、缓存、限流）；Workers Free 日志总量 10 万条,★★★★☆
+012,2026-11-18,一人公司,AI集成,Pipedream Connect,https://pipedream.com/pricing,"Free 档开发环境免费，含 3,000+ 连接器、1 万+ 预置工具与 MCP 服务器；上线生产需 Startup 档（每月 99 美元年付）",★★★★☆
