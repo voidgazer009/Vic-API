@@ -119,3 +119,13 @@ issue,date,direction,category,name,url,quota,match
 012,2026-11-18,一人公司,AI工具调用,Arcade,https://www.arcade.dev/pricing,"Free 档每月 2,000 次工具调用，平台费 0 美元；Team 档 25 美元/月，超出每次 0.01 美元",★★★★☆
 012,2026-11-18,一人公司,AI网关,Cloudflare AI Gateway,https://developers.cloudflare.com/ai-gateway/reference/pricing/,核心功能免费（分析、缓存、限流）；Workers Free 日志总量 10 万条,★★★★☆
 012,2026-11-18,一人公司,AI集成,Pipedream Connect,https://pipedream.com/pricing,"Free 档开发环境免费，含 3,000+ 连接器、1 万+ 预置工具与 MCP 服务器；上线生产需 Startup 档（每月 99 美元年付）",★★★★☆
+013,2026-11-19,外贸,外贸关税,UK Trade Tariff API,https://docs.trade-tariff.service.gov.uk/,开发者门户注册后每个 Key 每分钟 750 次，一个组织最多 3 个有效 Key；未认证访问的上限正由每分钟 500 次逐步下调，官方公告预计降到每分钟 50 次（2026-11-30 前完成）,★★★★☆
+013,2026-11-19,外贸,外贸合规,Trade.gov Consolidated Screening List,https://developer.trade.gov/,官方页面注明密钥免费；限流数字以各 API 文档页和官方控制台为准,★★★★☆
+013,2026-11-19,物流,物流地理编码,OpenCage Geocoding API,https://opencagedata.com/pricing,"免费试用每天 2,500 次请求，每秒 1 次，表格上传最多 100 行，仅限测试；付费档 X-Small 每月 50 美元起",★★★★☆
+013,2026-11-19,物流,物流地名数据,GeoNames,https://www.geonames.org/export/,"免费，每个 username 每天 10,000 点数、每小时 1,000 点数；数据采用 CC-BY 许可，允许商用",★★★★☆
+013,2026-11-19,自媒体,自媒体配音,Google Cloud Text-to-Speech,https://cloud.google.com/text-to-speech/pricing,每月免费：Standard 与 WaveNet 各 400 万字符，Chirp 3: HD、Neural2、Studio 各 100 万字符；超出后 Standard 每百万字符 4 美元,★★★★☆
+013,2026-11-19,自媒体,自媒体发布,Mastodon API,https://docs.joinmastodon.org/api/rate-limits/,免费；默认每个账号和每个 IP 5 分钟内各 300 次请求，上传媒体 30 分钟内 30 次，删帖 30 分钟内 30 次,★★★☆☆
+013,2026-11-19,一人公司,AI文档解析,LlamaParse,https://www.llamaindex.ai/pricing,"Pay-as-you-go 每月 10,000 免费额度，之后每 1,000 额度 1.5 美元；Fast 档每页 1 额度，Agentic 档每页 10 额度；5 个并发解析任务",★★★★★
+013,2026-11-19,一人公司,AI工作流,Inngest,https://www.inngest.com/pricing,"Free 每月 50,000 次执行、50 万个事件、5 个并发步骤、5 个席位，追踪历史 24 小时；超出免费量后执行暂停",★★★★☆
+013,2026-11-19,一人公司,AI后台任务,Trigger.dev,https://trigger.dev/pricing,Free 每月 5 美元算力额度、20 个并发运行、无限任务、5 名成员、10 个定时计划，日志保留 1 天,★★★★☆
+013,2026-11-19,一人公司,AI云算力,Modal,https://modal.com/pricing,Starter 每月 30 美元免费算力、3 个席位、100 个容器、10 个 GPU 并发、1 TiB 出站流量；日志保留 1 天,★★★☆☆

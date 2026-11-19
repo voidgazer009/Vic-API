@@ -2279,5 +2279,195 @@
   "url": "https://pipedream.com/pricing",
   "direction": "一人公司",
   "slug": "pipedream-connect"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "UK Trade Tariff API",
+  "tagline": "外贸关税｜英国官方关税数据",
+  "fields": {
+   "网址": "https://docs.trade-tariff.service.gov.uk/ ；开发者门户 https://hub.trade-tariff.service.gov.uk/",
+   "注册": "基础查询无需注册；在开发者门户注册后可创建 API Key，并使用 OAuth 2.0 令牌",
+   "额度": "开发者门户注册后每个 Key 每分钟 750 次，一个组织最多 3 个有效 Key；未认证访问的上限正由每分钟 500 次逐步下调，官方公告预计降到每分钟 50 次（2026-11-30 前完成）",
+   "用法": "GET https://www.trade-tariff.service.gov.uk/api/v2/commodities/0101210000 ，返回商品编码、关税与进出口措施 JSON；带 Key 时按官方文档使用 api.trade-tariff.service.gov.uk 并附 Bearer 令牌",
+   "Agent 适配": "官方 GitHub 提供 MCP 服务器（trade-tariff/mcp），含商品编码查询和自然语言归类搜索",
+   "场景": "Agent 为英国客户报价前，自动查 HS 编码对应的关税和进口限制",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸关税",
+  "url": "https://docs.trade-tariff.service.gov.uk/",
+  "direction": "外贸",
+  "slug": "uk-trade-tariff-api"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "Trade.gov Consolidated Screening List",
+  "tagline": "外贸合规｜出口受限名单",
+  "fields": {
+   "网址": "https://developer.trade.gov/ ；接口 https://api.trade.gov/gateway/v1/consolidated_screening_list/search",
+   "注册": "developer.trade.gov 注册账号，订阅 Data Services Platform APIs 后在个人页取得订阅密钥，免费",
+   "额度": "官方页面注明密钥免费；限流数字以各 API 文档页和官方控制台为准",
+   "用法": "GET 上述接口，带 name=客户名称&fuzzy_name=true 做模糊名称搜索，并附订阅密钥 YOUR_API_KEY",
+   "Agent 适配": "REST + JSON，一次查商务部、国务院、财政部多份名单，适合做自动化合规初筛",
+   "场景": "Agent 在接新客户询盘时，先筛一遍是否在美国出口限制名单上",
+   "匹配度": "★★★★☆"
+  },
+  "category": "外贸合规",
+  "url": "https://developer.trade.gov/",
+  "direction": "外贸",
+  "slug": "trade-gov-consolidated-screening-list"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "OpenCage Geocoding API",
+  "tagline": "物流地理编码｜全球地址转坐标",
+  "fields": {
+   "网址": "https://opencagedata.com/pricing ；文档 https://opencagedata.com/api",
+   "注册": "邮箱注册即得 Key，免费试用无需信用卡",
+   "额度": "免费试用每天 2,500 次请求，每秒 1 次，表格上传最多 100 行，仅限测试；付费档 X-Small 每月 50 美元起",
+   "用法": "GET https://api.opencagedata.com/geocode/v1/json?q=Berlin&key=YOUR_API_KEY",
+   "Agent 适配": "官方提供 llms.txt 和 Agent Skill（GitHub: OpenCageData/opencage-skills），SDK 覆盖 40 多种语言",
+   "场景": "Agent 把客户给的收货地址标准化为坐标，再接路线或天气查询",
+   "匹配度": "★★★★☆"
+  },
+  "category": "物流地理编码",
+  "url": "https://opencagedata.com/pricing",
+  "direction": "物流",
+  "slug": "opencage-geocoding-api"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "GeoNames",
+  "tagline": "物流地名数据｜全球地名与邮编库",
+  "fields": {
+   "网址": "https://www.geonames.org/export/ ；文档 https://www.geonames.org/export/web-services.html",
+   "注册": "创建账号，请求中用 username 参数标识应用",
+   "额度": "免费，每个 username 每天 10,000 点数、每小时 1,000 点数；数据采用 CC-BY 许可，允许商用",
+   "用法": "GET https://secure.geonames.org/searchJSON?q=Hamburg&maxRows=5&username=YOUR_USERNAME",
+   "Agent 适配": "REST + JSON，另有每日更新的全量地名文本和邮编数据可下载",
+   "场景": "Agent 校验港口城市名与国家，补全收货地址的邮编和时区",
+   "匹配度": "★★★★☆"
+  },
+  "category": "物流地名数据",
+  "url": "https://www.geonames.org/export/",
+  "direction": "物流",
+  "slug": "geonames"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "Google Cloud Text-to-Speech",
+  "tagline": "自媒体配音｜多语种配音",
+  "fields": {
+   "网址": "https://cloud.google.com/text-to-speech/pricing ；文档 https://cloud.google.com/text-to-speech/docs",
+   "注册": "需 Google Cloud 账号并启用计费，超出免费量才会扣费",
+   "额度": "每月免费：Standard 与 WaveNet 各 400 万字符，Chirp 3: HD、Neural2、Studio 各 100 万字符；超出后 Standard 每百万字符 4 美元",
+   "用法": "POST https://texttospeech.googleapis.com/v1/text:synthesize ，请求头 X-Goog-Api-Key: YOUR_API_KEY ，正文含 input、voice、audioConfig",
+   "Agent 适配": "官方多语言 SDK 和 REST，可按语言和声线批量生成音频",
+   "场景": "Agent 把短视频脚本转成多语种配音，发到全球账号",
+   "匹配度": "★★★★☆"
+  },
+  "category": "自媒体配音",
+  "url": "https://cloud.google.com/text-to-speech/pricing",
+  "direction": "自媒体",
+  "slug": "google-cloud-text-to-speech"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "Mastodon API",
+  "tagline": "自媒体发布｜联邦社交平台发帖",
+  "fields": {
+   "网址": "https://docs.joinmastodon.org/api/rate-limits/ ；文档 https://docs.joinmastodon.org/api/",
+   "注册": "在任一 Mastodon 实例注册账号，到「偏好设置 → 开发」创建应用取得访问令牌",
+   "额度": "免费；默认每个账号和每个 IP 5 分钟内各 300 次请求，上传媒体 30 分钟内 30 次，删帖 30 分钟内 30 次",
+   "用法": "POST https://你的实例域名/api/v1/statuses ，请求头 Authorization: Bearer YOUR_API_KEY ，表单字段 status",
+   "Agent 适配": "标准 REST + OAuth，限流信息在响应头 X-RateLimit-* 中返回，便于 Agent 自控节奏",
+   "场景": "Agent 把当天选题自动发到海外 Mastodon 账号，并附图和链接",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "自媒体发布",
+  "url": "https://docs.joinmastodon.org/api/rate-limits/",
+  "direction": "自媒体",
+  "slug": "mastodon-api"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "LlamaParse",
+  "tagline": "AI文档解析｜每月 1 万免费额度",
+  "fields": {
+   "网址": "https://www.llamaindex.ai/pricing ；文档 https://developers.llamaindex.ai/",
+   "注册": "cloud.llamaindex.ai 注册，按量付费档无月费",
+   "额度": "Pay-as-you-go 每月 10,000 免费额度，之后每 1,000 额度 1.5 美元；Fast 档每页 1 额度，Agentic 档每页 10 额度；5 个并发解析任务",
+   "用法": "用官方 Python 或 TypeScript SDK 上传文件，环境变量 LLAMA_CLOUD_API_KEY 填 YOUR_API_KEY，选解析档位后得到 Markdown",
+   "Agent 适配": "支持 130 多种文件格式，输出 Markdown 或结构化 JSON，缓存的重复解析不耗额度",
+   "场景": "Agent 读取供应商报价单、装箱单和合同 PDF，转成可检索文本",
+   "匹配度": "★★★★★"
+  },
+  "category": "AI文档解析",
+  "url": "https://www.llamaindex.ai/pricing",
+  "direction": "一人公司",
+  "slug": "llamaparse"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "Inngest",
+  "tagline": "AI工作流｜事件驱动的 Agent 编排",
+  "fields": {
+   "网址": "https://www.inngest.com/pricing ；文档 https://www.inngest.com/docs",
+   "注册": "app.inngest.com 注册，Free 档无需信用卡",
+   "额度": "Free 每月 50,000 次执行、50 万个事件、5 个并发步骤、5 个席位，追踪历史 24 小时；超出免费量后执行暂停",
+   "用法": "在项目里安装官方 SDK，定义函数并拆成 step，由事件触发，密钥用 YOUR_API_KEY 占位",
+   "Agent 适配": "自带重试、等待和长流程编排，SDK 支持 TypeScript、Python、Go",
+   "场景": "Agent 的「询盘 → 查关税 → 报价 → 发邮件」多步流程失败自动重试",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI工作流",
+  "url": "https://www.inngest.com/pricing",
+  "direction": "一人公司",
+  "slug": "inngest"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "Trigger.dev",
+  "tagline": "AI后台任务｜长时间运行的 Agent 任务",
+  "fields": {
+   "网址": "https://trigger.dev/pricing ；文档 https://trigger.dev/docs",
+   "注册": "trigger.dev 注册，Free 档无需信用卡",
+   "额度": "Free 每月 5 美元算力额度、20 个并发运行、无限任务、5 名成员、10 个定时计划，日志保留 1 天",
+   "用法": "用官方 TypeScript SDK 定义任务并部署，通过 API 或定时触发",
+   "Agent 适配": "任务无超时限制，适合需要等待工具或人工审批的长流程 Agent",
+   "场景": "Agent 每天定时抓取物流动态并汇总成日报",
+   "匹配度": "★★★★☆"
+  },
+  "category": "AI后台任务",
+  "url": "https://trigger.dev/pricing",
+  "direction": "一人公司",
+  "slug": "trigger-dev"
+ },
+ {
+  "issue": "013",
+  "date": "2026-11-19",
+  "name": "Modal",
+  "tagline": "AI云算力｜按秒计费的无服务器算力",
+  "fields": {
+   "网址": "https://modal.com/pricing ；文档 https://modal.com/docs",
+   "注册": "modal.com 注册，Starter 档月费 0 美元",
+   "额度": "Starter 每月 30 美元免费算力、3 个席位、100 个容器、10 个 GPU 并发、1 TiB 出站流量；日志保留 1 天",
+   "用法": "pip 安装官方 Python SDK，用装饰器把函数部署到云端，令牌用 YOUR_API_KEY 占位",
+   "Agent 适配": "可以把 Agent 的重计算、模型推理和沙盒放到云端，按实际使用秒数计费",
+   "场景": "Agent 批量转写视频或跑开源模型，本地不用配 GPU",
+   "匹配度": "★★★☆☆"
+  },
+  "category": "AI云算力",
+  "url": "https://modal.com/pricing",
+  "direction": "一人公司",
+  "slug": "modal"
  }
 ]
