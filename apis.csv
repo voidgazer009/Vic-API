@@ -129,3 +129,13 @@ issue,date,direction,category,name,url,quota,match
 013,2026-11-19,一人公司,AI工作流,Inngest,https://www.inngest.com/pricing,"Free 每月 50,000 次执行、50 万个事件、5 个并发步骤、5 个席位，追踪历史 24 小时；超出免费量后执行暂停",★★★★☆
 013,2026-11-19,一人公司,AI后台任务,Trigger.dev,https://trigger.dev/pricing,Free 每月 5 美元算力额度、20 个并发运行、无限任务、5 名成员、10 个定时计划，日志保留 1 天,★★★★☆
 013,2026-11-19,一人公司,AI云算力,Modal,https://modal.com/pricing,Starter 每月 30 美元免费算力、3 个席位、100 个容器、10 个 GPU 并发、1 TiB 出站流量；日志保留 1 天,★★★☆☆
+014,2026-11-20,外贸,外贸企业背调,Companies House API,https://developer-specs.company-information.service.gov.uk/,官方限流指南写明每个应用每五分钟窗口最多 600 次请求；需要更高额度可联系官方申请,★★★★☆
+014,2026-11-20,外贸,外贸汇率,currencylayer,https://currencylayer.com/product,"免费版页面写明 100 次 API 调用、每日更新、含历史汇率、仅限非商业使用；商业使用需付费 Basic 档（$14.99/月，最多 10,000 次请求）",★★★☆☆
+014,2026-11-20,物流,物流地址解析,Geocodio,https://www.geocod.io/pricing/,"按量付费档每天 2,500 次查询免费，页面写明「forever」；覆盖北美、澳洲、新西兰，并支持英国地理编码",★★★★☆
+014,2026-11-20,物流,物流天气,National Weather Service API,https://www.weather.gov/documentation/services-web-api,官方页面写明免费、可用于任何用途；限流数字不公开，页面称对常规使用「足够宽松」，超限会报错并通常在约 5 秒后可重试,★★★☆☆
+014,2026-11-20,物流,物流海运天气,Stormglass,https://stormglass.io/pricing/,免费档每天 10 次请求，含全部天气参数，不提供支持，且不可商用；付费 Small 档 €19/月，每天 500 次,★★★☆☆
+014,2026-11-20,自媒体,自媒体转写,Supadata,https://supadata.ai/pricing,免费档每月 100 积分，速率每秒 1 次；付费 Basic 档 300 积分每月 $5（按年付）,★★★★☆
+014,2026-11-20,自媒体,自媒体语音转写,Gladia,https://www.gladia.io/pricing,自助档页面写明新用户送 €50 免费额度；之后按量付费，异步转写起价每小时 €0.16；支持 100 多种语言和说话人分离,★★★★☆
+014,2026-11-20,一人公司,AI观测,Helicone,https://www.helicone.ai/pricing,"Hobby 免费档含 10,000 次免费请求、1 GB 存储、1 个席位和 1 个组织；Pro 档 $79/月",★★★★☆
+014,2026-11-20,一人公司,AI数据库,Turso,https://turso.tech/pricing,Free 档每月 $0，含 100 个数据库、5 GB 存储、每月 5 亿行读取、1000 万行写入、3 GB 同步数据,★★★★☆
+014,2026-11-20,一人公司,AI记忆,Chroma Cloud,https://www.trychroma.com/pricing,Starter 档每月 $0 并附 $5 免费额度；超出后按量计费，写入每 GiB $2.50，存储每 GiB 每月 $0.33,★★★★☆
