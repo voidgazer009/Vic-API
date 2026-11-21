@@ -3,14 +3,17 @@
 品牌「Vic」。每天 08:00（香港时间）自动更新 10 个免费 API，四个方向每个至少 1 个：外贸、国际物流、AI 一人公司、全球自媒体。
 额度只写官方页面核对过的数字，以收录当期标注的核对日期为准；用前请以官方控制台为准。
 
-共收录 **140** 个 API。机器可读：[`apis.json`](apis.json)、[`apis.csv`](apis.csv)。每期原文在 `issues/`，杂志版 PDF 在 `pdf/`。
+共收录 **150** 个 API。机器可读：[`apis.json`](apis.json)、[`apis.csv`](apis.csv)。每期原文在 `issues/`，杂志版 PDF 在 `pdf/`。
 
 每次上传前都要通过 [审核机制](REVIEW.md)：密钥/个人信息/敏感文件扫描、字段与额度检查、官方页面事实核查、安全复核，全部通过才推送。
 
-## 外贸（23）
+## 外贸（26）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [GLEIF API](apis/gleif-api.md) | 外贸合规 | 全球企业 LEI 身份库 | 015 | ★★★★☆ |
+| [OpenSanctions API](apis/opensanctions-api.md) | 外贸合规 | 制裁名单与政要筛查 | 015 | ★★★★☆ |
+| [Calendarific](apis/calendarific.md) | 外贸节假日 | 全球公共假期日历 | 015 | ★★★☆☆ |
 | [Companies House API](apis/companies-house-api.md) | 外贸企业背调 | 英国公司官方登记 | 014 | ★★★★☆ |
 | [currencylayer](apis/currencylayer.md) | 外贸汇率 | 轻量汇率与历史价 | 014 | ★★★☆☆ |
 | [UK Trade Tariff API](apis/uk-trade-tariff-api.md) | 外贸关税 | 英国官方关税数据 | 013 | ★★★★☆ |
@@ -35,10 +38,12 @@
 | [UN Comtrade](apis/un-comtrade.md) | 外贸数据 | 联合国全球进出口统计 | 002 | ★★★★☆ |
 | [Frankfurter](apis/frankfurter.md) | 外贸汇率 | 免 Key 开源汇率 API | 001 | ★★★★☆ |
 
-## 物流（19）
+## 物流（21）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [LocationIQ](apis/locationiq.md) | 物流地址 | 地址转坐标与路线 | 015 | ★★★★☆ |
+| [Tomorrow.io Weather API](apis/tomorrow-io-weather-api.md) | 物流天气 | 全球天气与MCP | 015 | ★★★☆☆ |
 | [Geocodio](apis/geocodio.md) | 物流地址解析 | 批量地址转坐标 | 014 | ★★★★☆ |
 | [National Weather Service API](apis/national-weather-service-api.md) | 物流天气 | 美国官方天气 | 014 | ★★★☆☆ |
 | [Stormglass](apis/stormglass.md) | 物流海运天气 | 全球海浪与风速 | 014 | ★★★☆☆ |
@@ -59,10 +64,12 @@
 | [openrouteservice](apis/openrouteservice.md) | 物流路线 | 路线与配送优化 | 002 | ★★★★☆ |
 | [17TRACK API](apis/17track-api.md) | 物流追踪 | 全球包裹追踪 | 001 | ★★★☆☆（额度有限，适合试跑） |
 
-## 自媒体（19）
+## 自媒体（21）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [remove.bg](apis/remove-bg.md) | 自媒体素材 | 一键抠图去背景 | 015 | ★★★★☆ |
+| [Creatomate](apis/creatomate.md) | 自媒体视频 | 模板化视频与图片自动生成 | 015 | ★★★★☆ |
 | [Supadata](apis/supadata.md) | 自媒体转写 | 视频链接直出文字稿 | 014 | ★★★★☆ |
 | [Gladia](apis/gladia.md) | 自媒体语音转写 | 多语言转写与说话人分离 | 014 | ★★★★☆ |
 | [Google Cloud Text-to-Speech](apis/google-cloud-text-to-speech.md) | 自媒体配音 | 多语种配音 | 013 | ★★★★☆ |
@@ -83,10 +90,13 @@
 | [ElevenLabs](apis/elevenlabs.md) | 自媒体配音 | AI 配音与语音转文字 | 002 | ★★★★☆（免费额度少，适合试样） |
 | [Pexels API](apis/pexels-api.md) | 自媒体素材 | 免费图片和视频 | 001 | ★★★★☆ |
 
-## 一人公司（79）
+## 一人公司（82）
 
 | API | 分类 | 用途 | 期数 | 匹配度 |
 |---|---|---|---|---|
+| [Letta](apis/letta.md) | AI记忆 | 有状态 Agent 与长期记忆 | 015 | ★★★★☆ |
+| [Pydantic Logfire](apis/pydantic-logfire.md) | AI观测 | Agent 调用链与成本追踪 | 015 | ★★★★☆ |
+| [Zilliz Cloud](apis/zilliz-cloud.md) | AI向量库 | 托管 Milvus 向量检索 | 015 | ★★★★☆ |
 | [Helicone](apis/helicone.md) | AI观测 | 给模型调用加日志和成本统计 | 014 | ★★★★☆ |
 | [Turso](apis/turso.md) | AI数据库 | 给每个 Agent 一个 SQLite 数据库 | 014 | ★★★★☆ |
 | [Chroma Cloud](apis/chroma-cloud.md) | AI记忆 | 向量与全文检索云服务 | 014 | ★★★★☆ |

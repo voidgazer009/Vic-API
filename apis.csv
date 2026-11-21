@@ -139,3 +139,13 @@ issue,date,direction,category,name,url,quota,match
 014,2026-11-20,一人公司,AI观测,Helicone,https://www.helicone.ai/pricing,"Hobby 免费档含 10,000 次免费请求、1 GB 存储、1 个席位和 1 个组织；Pro 档 $79/月",★★★★☆
 014,2026-11-20,一人公司,AI数据库,Turso,https://turso.tech/pricing,Free 档每月 $0，含 100 个数据库、5 GB 存储、每月 5 亿行读取、1000 万行写入、3 GB 同步数据,★★★★☆
 014,2026-11-20,一人公司,AI记忆,Chroma Cloud,https://www.trychroma.com/pricing,Starter 档每月 $0 并附 $5 免费额度；超出后按量计费，写入每 GiB $2.50，存储每 GiB 每月 $0.33,★★★★☆
+015,2026-11-21,外贸,外贸合规,GLEIF API,https://www.gleif.org/en/lei-data/gleif-api,官方文档写明限流为每个用户每分钟 60 次请求，所有用户一致,★★★★☆
+015,2026-11-21,外贸,外贸合规,OpenSanctions API,https://www.opensanctions.org/api/,"官方页面写明注册即送 2,000 免费积分；之后按积分包购买，500 积分 €50；数据遵循 CC BY-NC 非商业许可，商用需另行授权",★★★★☆
+015,2026-11-21,外贸,外贸节假日,Calendarific,https://calendarific.com/pricing,"免费档每月 500 次调用，需标注来源，社区支持，单一语言，历史和未来数据有限；付费年费 $500 档每月 50,000 次",★★★☆☆
+015,2026-11-21,物流,物流地址,LocationIQ,https://locationiq.com/pricing,"免费档每天 5,000 次请求，每秒 2 次，每分钟 60 次，含地理编码、路线和静态地图，限有限商用；Developer 档 $100/月，每天 25,000 次",★★★★☆
+015,2026-11-21,物流,物流天气,Tomorrow.io Weather API,https://www.tomorrow.io/weather-api/,官方限流文档写明按套餐限制每秒、每小时和每天的请求数，具体免费数字以官方控制台为准,★★★☆☆
+015,2026-11-21,自媒体,自媒体素材,remove.bg,https://www.remove.bg/api,官方 API 页面写明每月前 50 次调用免费；输出分辨率最高 50 百万像素,★★★★☆
+015,2026-11-21,自媒体,自媒体视频,Creatomate,https://creatomate.com/pricing,"免费试用 50 个积分，含全部功能；Essential 档 $45/月，每月 2,000 积分",★★★★☆
+015,2026-11-21,一人公司,AI记忆,Letta,https://www.letta.com/pricing,Free 档 $0，最多 3 个有状态 Agent，每个记忆仓库 5 MiB 存储，可自带模型 Key；Pro 档 $20/月,★★★★☆
+015,2026-11-21,一人公司,AI观测,Pydantic Logfire,https://pydantic.dev/pricing,"官方定价页写明每月 $20 免费用量（1,000 万条记录）；超出后 Team 和 Growth 档每百万条 $2",★★★★☆
+015,2026-11-21,一人公司,AI向量库,Zilliz Cloud,https://zilliz.com/pricing,Free 档 $0，含 5 GB 存储、每月 250 万 vCU、最多 5 个集合，社区支持,★★★★☆
